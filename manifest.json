@@ -1,0 +1,93 @@
+{
+  "artifactId": "ORA-WEBAPP-UNIFIED-INTERNAL-V01",
+  "builtAt": "2026-10-02T21:38:47.527034+00:00",
+  "status": "INTERNAL_REVIEW_ONLY",
+  "runtimeCheckCount": 36,
+  "publicDeployment": false,
+  "canonicalPromotion": false,
+  "uiContractReview": "PENDING",
+  "assetsAndCode": [
+    {
+      "path": "app/app.js",
+      "bytes": 22336,
+      "sha256": "3f85d1c0fc1262fb3acd0705ef794c4dab5c3c3af4e879e3ef74710dfe6e1dd3"
+    },
+    {
+      "path": "app/assets/audio/no01-piano.mp3",
+      "bytes": 939197,
+      "sha256": "150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0"
+    },
+    {
+      "path": "app/assets/audio/no01-tenor.mp3",
+      "bytes": 939197,
+      "sha256": "081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af"
+    },
+    {
+      "path": "app/assets/score/laodicea-p149.png",
+      "bytes": 162392,
+      "sha256": "ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566"
+    },
+    {
+      "path": "app/assets/score/m1m3.png",
+      "bytes": 20620,
+      "sha256": "5be35ef85a963fa097fd310b24cbf1ee526f4df0d38ec2a3e96d3f5363f21288"
+    },
+    {
+      "path": "app/assets/score/no01-first-system.png",
+      "bytes": 84888,
+      "sha256": "47798d0d07dfa977d74e5524d6877e856b3402c268c2f2679a6035e2b0c71c39"
+    },
+    {
+      "path": "app/assets/score/p-003.png",
+      "bytes": 234588,
+      "sha256": "b7d7a82ab35f0a9412efd48a71430aec4972a6ae440bb43d29c31df8b7d76d41"
+    },
+    {
+      "path": "app/data/copy.json",
+      "bytes": 8126,
+      "sha256": "6aac675597704a91e952daf57be48f3dbbbfc9844e21643281176cbc9d517aaf"
+    },
+    {
+      "path": "app/data/integration.json",
+      "bytes": 94770,
+      "sha256": "cab93024c2644111e5684d1515728ba89dbb62362ba215980f11828dc67b6a2d"
+    },
+    {
+      "path": "app/data/screens.json",
+      "bytes": 16173,
+      "sha256": "88e4e2012fb081227b528c204a64c4303551daba3dc6724e0a885e4133fea3a6"
+    },
+    {
+      "path": "app/data/tokens.json",
+      "bytes": 14202,
+      "sha256": "ee5d46e33c0030698fb73ed7d5edf924c1dd85b52b9a7914db691a64b0cfc161"
+    },
+    {
+      "path": "app/index.html",
+      "bytes": 3249854,
+      "sha256": "2f267a39d880eabe2d940313d70046a84b22f6260235e16154e558c4fa90e1b1"
+    },
+    {
+      "path": "app/styles.css",
+      "bytes": 10188,
+      "sha256": "df400b297a296e5245a931d1d7117b857286d8033ddacca76ba086dfb272b000"
+    }
+  ],
+  "parentArtifacts": [
+    {
+      "path": "source/fix.zip",
+      "bytes": 25946,
+      "sha256": "eaf8b98cf2b402264bbba2ccd3a9feaae10e593bc633b310a11ff33ee837dd03"
+    },
+    {
+      "path": "source/no01.zip",
+      "bytes": 5245400,
+      "sha256": "afad4966b025a0ebde67246025428971a14cf701126172e26c44487979e42bf9"
+    },
+    {
+      "path": "source/laodicea-candidate-original.json",
+      "bytes": 2343,
+      "sha256": "abe0e18170b3f42df336593fde23dae7cea22658f249a1bb1e13e6d8f2e64304"
+    }
+  ]
+}

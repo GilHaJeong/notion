@@ -1,0 +1,65 @@
+{
+  "packageId": "NO36_laodicea",
+  "pieceId": "laodicea",
+  "pieceTitle": "일곱 번째 라오디게아 교회",
+  "status": "CANDIDATE_ONLY",
+  "canonicalizationStatus": "REVIEW_READY_BUT_BLOCKED_MISSING_AUDIO_TIMELINE",
+  "source": {
+    "pdfPrintedPage": 149,
+    "pdfPage": 145,
+    "scoreImage": "file://%7B%22source%22%3A%22attachment%3A565abd3c-817c-4783-8b82-a73fc3344c34%3Alaodicea_page149_render.png%22%2C%22permissionRecord%22%3A%7B%22table%22%3A%22block%22%2C%22id%22%3A%22854edd50-ad44-43a8-8eb9-90b069e87408%22%2C%22spaceId%22%3A%224b06273d-edf8-4f99-8e44-fd1ad8bc00a7%22%7D%7D",
+    "imageWidth": 1240,
+    "imageHeight": 1755,
+    "imageSha256": "ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566",
+    "sourcePdfSha256": "1bddf7938766633cc40053a1eacb5d42f7deb9f4216d310ee34e8eddbc573a74"
+  },
+  "cues": [
+    {
+      "cueId": "L32-03",
+      "pieceId": "laodicea",
+      "page": 149,
+      "measure": "45-53",
+      "normalizedRect": {
+        "x": 0.068548,
+        "y": 0.094017,
+        "width": 0.858871,
+        "height": 0.831909
+      },
+      "visibleMarker": "③",
+      "category": "rebuke",
+      "audience": "both",
+      "title": "Rebuke accelerates (책망이 가속됨)",
+      "music": {
+        "m45": "accel. · ff",
+        "m49": "Allegro feroce ♩=118"
+      },
+      "theology": "직접적 책망 구간",
+      "narrative": "Revelation 3:16의 토하여 버리리라 구간",
+      "singing": "가속·강세 변화를 따라 명료하게 발화",
+      "risk": "고조 구간의 텍스트·리듬 동시 정렬",
+      "relatedAudio": {
+        "status": "MISSING_INPUT",
+        "expected": "audio/no36_laodicea_part_voice_or_guide.mp3",
+        "mediaClass": "actual_or_approved_guide_pending"
+      },
+      "relatedTimeline": {
+        "status": "MISSING_INPUT",
+        "expected": "timelines/no36_laodicea.json",
+        "requiredFields": [
+          "measure",
+          "tick_start",
+          "tick_end",
+          "start_sec",
+          "end_sec"
+        ]
+      },
+      "coordinateStatus": "PDF_CROSSCHECK_APPROVED"
+    }
+  ],
+  "review": {
+    "scoreCoordinateQa": "APPROVED",
+    "audioTimelineQa": "BLOCKED_MISSING_INPUT",
+    "canonicalPromotion": "NOT_APPROVED",
+    "nextGate": "ingest audio and timeline, validate measure 45-53 alignment, then owner review"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "browser": "chromium",
+  "captureMethod": "cdp",
+  "captureSize": [
+    820,
+    1180
+  ],
+  "consoleErrors": [],
+  "document": {
+    "diagnostics": {
+      "clippedOverflow": [],
+      "overlayIntersections": [],
+      "viewportOverflow": {
+        "horizontal": false,
+        "vertical": false
+      }
+    },
+    "documentSize": [
+      820,
+      1180
+    ],
+    "fontStatus": "loaded",
+    "title": "\uc624\ub77c\ud1a0\ub9ac\uc624 \u00b7 \ub2e8\uc77c \ud1b5\ud569 \uc6f9\uc571 \ub0b4\ubd80 \uac80\uc99d\ubcf8 v0.1",
+    "viewportSize": [
+      820,
+      1180
+    ]
+  },
+  "exceptions": [],
+  "failedResources": [],
+  "frames": [],
+  "fullPage": true,
+  "input": "/data/oratorio_unified/app/index.html",
+  "output": "/data/oratorio_unified/qa/helper-first-820.png",
+  "reducedMotion": false,
+  "byteLength": 66025,
+  "sha256": "2d3b6bb752d01c2a83552dd7ddff778e3fee7cbde995474072b2cca97c125001",
+  "dimensions": [
+    820,
+    1180
+  ],
+  "pixelSha256": "471a71cdb71212109a94bcc3627f44c18704a003095f3a6de0608c98f85f10cc",
+  "renderedFrameCount": 0,
+  "distinctFrameCount": 0
+}
