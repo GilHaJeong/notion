@@ -1,0 +1,177 @@
+{
+  "build": "oratorio-unified-internal-v0.5.0",
+  "testedAt": "2026-10-03T03:35:50.463Z",
+  "environment": "sandbox Chromium / hosted localhost service worker; offline restart tested separately",
+  "tests": [
+    {
+      "name": "첫 실행 무선택·진입 잠금",
+      "status": "PASS"
+    },
+    {
+      "name": "초기 가짜 연습 기록 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "파트 선택 활성화",
+      "status": "PASS"
+    },
+    {
+      "name": "홈 라우팅",
+      "status": "PASS"
+    },
+    {
+      "name": "홈 진입만으로 기록 생성하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "곡 상세 연결",
+      "status": "PASS"
+    },
+    {
+      "name": "원본 악보 이미지 로딩",
+      "status": "PASS"
+    },
+    {
+      "name": "실제 AudioContext 재생·시간 진행",
+      "status": "PASS"
+    },
+    {
+      "name": "공통 시간축으로 두 stem 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "트랙 변경·반주 음소거",
+      "status": "PASS"
+    },
+    {
+      "name": "트랙 변경·테너 음소거",
+      "status": "PASS"
+    },
+    {
+      "name": "선택 마디 반복 실제 동작·횟수 저장",
+      "status": "PASS"
+    },
+    {
+      "name": "일시정지 실제 동작",
+      "status": "PASS"
+    },
+    {
+      "name": "seek 선택 구간 내 이동",
+      "status": "PASS"
+    },
+    {
+      "name": "재생 속도 상태",
+      "status": "PASS"
+    },
+    {
+      "name": "역전 구간 자동 정합성",
+      "status": "PASS"
+    },
+    {
+      "name": "자가 체크 저장",
+      "status": "PASS"
+    },
+    {
+      "name": "재접속 파트·자가 체크 복구",
+      "status": "PASS"
+    },
+    {
+      "name": "이어하기 구간 복구",
+      "status": "PASS"
+    },
+    {
+      "name": "미확보 음원 재생 잠금",
+      "status": "PASS"
+    },
+    {
+      "name": "라오디게아 시간축 추정하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "원본 좌표 Cue·시트 연결",
+      "status": "PASS"
+    },
+    {
+      "name": "Music 분석을 대원 시트에 노출하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "36곡 상태 자리·유효 플레이어 분리",
+      "status": "PASS"
+    },
+    {
+      "name": "자가 체크 필터",
+      "status": "PASS"
+    },
+    {
+      "name": "다른 파트에 테너를 잘못 배정하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "820×1180 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "768×1024 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "834×1194 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1024×1366 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390×844 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180×820 가로 페이지 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "동일 출처 외부 CDN 의존 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "브라우저 JS 예외 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "저장 schema 불일치 초기화",
+      "status": "PASS"
+    },
+    {
+      "name": "저장소 접근 거부 안전 처리",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [
+    "http://localhost:8776/app/v05/",
+    "http://localhost:8776/app/v05/styles.css",
+    "http://localhost:8776/app/v05/bundle.js",
+    "http://localhost:8776/app/v05/offline.js",
+    "http://localhost:8776/app/v05/boot.js",
+    "http://localhost:8776/app/v05/icon.svg",
+    "http://localhost:8776/app/v05/package.json",
+    "http://localhost:8776/app/v05/app.js",
+    "http://localhost:8776/app/assets/score/no01-canonical-page7-system1.png?v=a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8",
+    "http://localhost:8776/app/assets/audio/no01-tenor.mp3?v=081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af",
+    "http://localhost:8776/app/assets/audio/no01-piano.mp3?v=150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0",
+    "http://localhost:8776/app/v05/icon.svg",
+    "http://localhost:8776/app/v05/",
+    "http://localhost:8776/app/v05/styles.css",
+    "http://localhost:8776/app/v05/bundle.js",
+    "http://localhost:8776/app/v05/offline.js",
+    "http://localhost:8776/app/v05/boot.js",
+    "http://localhost:8776/app/v05/icon.svg",
+    "http://localhost:8776/app/v05/package.json",
+    "http://localhost:8776/app/v05/app.js",
+    "http://localhost:8776/app/assets/score/no01-canonical-page7-system1.png?v=a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8",
+    "http://localhost:8776/app/assets/score/laodicea-p149.png?v=ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566"
+  ],
+  "scope": "runtime only; content canonical QA, acoustic listen, real tablet readability and production approval excluded"
+}

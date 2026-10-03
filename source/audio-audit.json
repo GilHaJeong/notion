@@ -1,0 +1,56 @@
+{
+  "candidateMetadata": {
+    "status": "MIDI_LEVEL_SYNTH",
+    "source_musicxml": "NO01_omr_proposed_full.musicxml",
+    "source_musicxml_sha256": "e7456e83d0c894ef5da557d77c1823eb836c091c76dd6f4a4807c45903c02fc0",
+    "tempo_qpm": 86,
+    "sample_rate": 22050,
+    "duration_seconds": 58.6046511627907,
+    "measures": 21,
+    "parts": {
+      "P1": {
+        "name": "Tenor solo",
+        "event_count": 94,
+        "pitched_event_count": 94
+      },
+      "P2": {
+        "name": "Piano",
+        "event_count": 300,
+        "pitched_event_count": 300
+      }
+    },
+    "audio_files": {
+      "tenor": "audio/no01_tenor_midi_level.wav",
+      "piano": "audio/no01_piano_midi_level.wav",
+      "mix": "audio/no01_mix_midi_level.wav"
+    },
+    "limitations": [
+      "candidate MusicXML is not canonical",
+      "sine/additive MIDI-level rendering, not singing",
+      "piano/tenor note events follow MusicXML candidate structure",
+      "no performer voice or voicebank used"
+    ]
+  },
+  "rawSMFVerified": false,
+  "searchedFolders": [
+    "oratorio_unified",
+    "oratorio_v03",
+    "oratorio_v04"
+  ],
+  "existingTwoMP3Unchanged": true,
+  "assets": {
+    "tenor": {
+      "path": "assets/audio/no01-tenor.mp3",
+      "bytes": 939197,
+      "sha256": "081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af"
+    },
+    "piano": {
+      "path": "assets/audio/no01-piano.mp3",
+      "bytes": 939197,
+      "sha256": "150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0"
+    }
+  },
+  "decodedDurationSeconds": 58.60467120181406,
+  "containerReportedDurationSeconds": 58.67102,
+  "scope": "file availability and whole playback; not canonical transcription or acoustic approval"
+}

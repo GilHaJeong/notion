@@ -1,0 +1,129 @@
+{
+  "tests": [
+    {
+      "name": "이전 반복 켜짐 설정이어도 새 기본은 전곡·반복 꺼짐",
+      "status": "PASS"
+    },
+    {
+      "name": "기존 사용자 준비 기록 보존",
+      "status": "PASS"
+    },
+    {
+      "name": "홈에 전곡 듣기와 구간 연습을 분리",
+      "status": "PASS"
+    },
+    {
+      "name": "홈 전곡 듣기 한 번으로 명시적 재생 시작",
+      "status": "PASS"
+    },
+    {
+      "name": "실제 decode한 전체 파일 길이를 재생 범위로 사용",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡에서는 마디 제한 컨트롤 숨김·반복 잠금",
+      "status": "PASS"
+    },
+    {
+      "name": "3마디 끝에서 끊지 않고 4마디 이후까지 계속",
+      "status": "PASS"
+    },
+    {
+      "name": "실제 전곡 자연 종료·처음부터 끝까지 1회",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡 종료를 구간 반복 횟수로 기록하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡 끝난 뒤 자동 반복 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "완료 상태·다시 재생 버튼 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "다시 재생은 처음부터",
+      "status": "PASS"
+    },
+    {
+      "name": "일시정지 위치 유지·소스 중단",
+      "status": "PASS"
+    },
+    {
+      "name": "일시정지 뒤 이어서 재생 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "이어서 재생은 위치 초기화 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡 청취 중 서사·페이지·팝업 변경도 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "사용자 중단은 실제 소스 중지·처음으로",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡 seek는 3마디에 제한되지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "구간 연습은 사용자가 선택해야 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "명시적으로 켠 구간 반복은 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "전곡 복귀시 짧은 구간·반복 해제",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 전곡 화면 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 중단·범위 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "820 전곡 화면 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 중단·범위 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "390 전곡 화면 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 중단·범위 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인에서도 전곡 파일 두 stem 재생·반복 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 종료 경계·자동 반복 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "웹 예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "decodedDuration": 58.60467120181406,
+  "fullContinuousPlaybackTested": true,
+  "environment": "Chromium localhost, actual AudioContext sample-clock playback; not acoustic listen or physical tablet",
+  "rawMIDIBinaryVerified": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "./",
+  "name": "오라토리오 리허설 · 악보 터치 내부 검증본 v0.5",
+  "short_name": "서사 검증",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F1EBDE",
+  "theme_color": "#F1EBDE",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "app/v05/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v05/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v05/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v05/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v05/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v05/sw.js",
+      "matches": true
+    }
+  ],
+  "builderOutput": "Built 14 v05 files. Existing two audio stems unchanged.\n"
+}

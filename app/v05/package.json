@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "internal-no01-laodicea",
+  "version": "0.5.0-data.1",
+  "label": "No.1 · 테너·피아노 / 라오디게아 악보·해설",
+  "canonical": false,
+  "scope": "No.1 전곡 1회 재생 기본 / 구간 연습 선택 / 후보 음원·수동 서사",
+  "items": [
+    {
+      "key": "content",
+      "url": "data/content-v01.json",
+      "bytes": 78440,
+      "sha256": "8b7778ac0b408d630b263bce51cfee60b2c5a30f677a9b28e04926af762cbf31",
+      "mime": "application/json"
+    },
+    {
+      "key": "tenor",
+      "url": "../assets/audio/no01-tenor.mp3",
+      "bytes": 939197,
+      "sha256": "081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af",
+      "mime": "audio/mpeg"
+    },
+    {
+      "key": "piano",
+      "url": "../assets/audio/no01-piano.mp3",
+      "bytes": 939197,
+      "sha256": "150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0",
+      "mime": "audio/mpeg"
+    },
+    {
+      "key": "no01page",
+      "url": "../assets/score/no01-canonical-page7.png",
+      "bytes": 257757,
+      "sha256": "90f6ebf8ee460c35331f6b986de064cdff5e42bf1e71da78ca4b8eb6b58bee14",
+      "mime": "image/png"
+    },
+    {
+      "key": "no01crop",
+      "url": "../assets/score/no01-canonical-page7-system1.png",
+      "bytes": 95576,
+      "sha256": "a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8",
+      "mime": "image/png"
+    },
+    {
+      "key": "laodicea",
+      "url": "../assets/score/laodicea-p149.png",
+      "bytes": 162392,
+      "sha256": "ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566",
+      "mime": "image/png"
+    },
+    {
+      "key": "no01page8",
+      "url": "../assets/score/no01-page8.png",
+      "bytes": 183706,
+      "sha256": "ae38bdff1c3fb52c248b7f3300aa30541ac271f87cda0757b282745554b9b6eb",
+      "mime": "image/png"
+    },
+    {
+      "key": "no01crop8",
+      "url": "../assets/score/no01-page8-system16.png",
+      "bytes": 70921,
+      "sha256": "352396411aeb529a02d9180e3875c291877b576a1c220dc9584d3c1b0be23887",
+      "mime": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "tests": [
+    {
+      "name": "7쪽 m1 후보 앵커 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "8쪽 표시·음악 엔진 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "8쪽 실제 이미지 decode",
+      "status": "PASS"
+    },
+    {
+      "name": "악보 마커 터치로 정확한 Cue 열기",
+      "status": "PASS"
+    },
+    {
+      "name": "악보 터치 중 음악 이동·중지 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "원문14와 관찰16·ff 미확인 명시",
+      "status": "PASS"
+    },
+    {
+      "name": "원문 m14 보존",
+      "status": "PASS"
+    },
+    {
+      "name": "마커 팝업 Escape·초점 복귀",
+      "status": "PASS"
+    },
+    {
+      "name": "보통 표시 중 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "크게 표시 중 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "전체 페이지 표시 중 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p7 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 p8 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p7 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "820 p8 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p7 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 보통: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 보통: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 크게: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 크게: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 전체 페이지: 이미지·좌표·44px 버튼",
+      "status": "PASS"
+    },
+    {
+      "name": "390 p8 전체 페이지: 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "드래그 뒤 잘못된 팝업 차단",
+      "status": "PASS"
+    },
+    {
+      "name": "새 탭으로 후보 팝업 정상 열림",
+      "status": "PASS"
+    },
+    {
+      "name": "수동 단계로7쪽 연결",
+      "status": "PASS"
+    },
+    {
+      "name": "수동 단계로8쪽 연결·Cue반복 잠금",
+      "status": "PASS"
+    },
+    {
+      "name": "좌표는 후보·음원 시간은 null",
+      "status": "PASS"
+    },
+    {
+      "name": "기존 두 음원 해시 불변",
+      "status": "PASS"
+    },
+    {
+      "name": "새 패키지8개 모두 해시 일치",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인8쪽 이미지 decode",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 악보터치 원문 열람",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인8쪽과음악 함께 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "새 악보터치 JS예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "environment": "Chromium touch-enabled emulator; actual iPad/Safari not tested",
+  "sourcePdfSha256": "1bddf7938766633cc40053a1eacb5d42f7deb9f4216d310ee34e8eddbc573a74"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "app/v05/app.js",
+    "bytes": 37341,
+    "sha256": "fdd507fb1b216a7ec02f898f814ab9b8843d6b77ca82d47bae19352f2e76b56e"
+  },
+  {
+    "path": "app/v05/boot.js",
+    "bytes": 1042,
+    "sha256": "fef7108f3199b355edaa1e2ec3f3aee83ebe6d820554388b4d24f91aea885570"
+  },
+  {
+    "path": "app/v05/bundle.js",
+    "bytes": 78466,
+    "sha256": "824cdb66f5a9ecd8ed228109dae3b21f4cd2b23a7bd887c16f7e550391437a46"
+  },
+  {
+    "path": "app/v05/data/content-v01.json",
+    "bytes": 78440,
+    "sha256": "8b7778ac0b408d630b263bce51cfee60b2c5a30f677a9b28e04926af762cbf31"
+  },
+  {
+    "path": "app/v05/icon-192.png",
+    "bytes": 6544,
+    "sha256": "46bfdb2f8848328b27703f70f853467e6beea9175d83161c2ea1e70c67662285"
+  },
+  {
+    "path": "app/v05/icon-512.png",
+    "bytes": 3299,
+    "sha256": "489fcbba47c3ff1a2371716df3a91e1816b570677c7acaf1dd42889f6a7c62cf"
+  },
+  {
+    "path": "app/v05/icon.svg",
+    "bytes": 349,
+    "sha256": "a606eccb53472c3b899af0c9ed95fd566ed361e06ae50ed38f1b1bbe873e6e61"
+  },
+  {
+    "path": "app/v05/index.html",
+    "bytes": 3593,
+    "sha256": "fcf226377a0230c97c0d621ed11822c863bf5637bfd07f0ccceabf8bb5c19db8"
+  },
+  {
+    "path": "app/v05/manifest.webmanifest",
+    "bytes": 506,
+    "sha256": "7d35235f5077f1cb3705993b1071be6d93d3b7c7227dc75ce66d14b8fdfe76fe"
+  },
+  {
+    "path": "app/v05/offline.js",
+    "bytes": 14260,
+    "sha256": "8aec1b3b713dfae2b07fd1390c669db600cd050b1e4cb9cf1fbd54f8888ed52e"
+  },
+  {
+    "path": "app/v05/package.json",
+    "bytes": 2074,
+    "sha256": "b44ea4cf59cfaa969921179302b93193feba4071d3d856f844e7936944ce6d55"
+  },
+  {
+    "path": "app/v05/source-no01-03.txt",
+    "bytes": 13351,
+    "sha256": "db1881f7faf3cab2fbdbd5430ec4e8f58351e59a28481420798f63f76bc0485f"
+  },
+  {
+    "path": "app/v05/styles.css",
+    "bytes": 17232,
+    "sha256": "c3b1670236ba602f836a5e5117d5788a4d3981cca4ffacf0cc3de5d33d1da9b2"
+  },
+  {
+    "path": "app/v05/sw.js",
+    "bytes": 1277,
+    "sha256": "35d8019b63c0734addd911af81ba82a7ff5aa3c01ae94dfd6f2c6626c3993ecd"
+  }
+]
