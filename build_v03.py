@@ -3,7 +3,8 @@ import json, hashlib, shutil
 B=Path(__file__).resolve().parent; V2=B if (B/'app/v02').exists() else Path('/data/oratorio_v02'); O=B/'app/v03'; O.mkdir(parents=True,exist_ok=True)
 for f in (V2/'app/v02').iterdir():
  if f.is_file(): shutil.copy2(f,O/f.name)
-shutil.copytree(V2/'app/assets',B/'app/assets',dirs_exist_ok=True)
+if (V2/'app/assets').resolve()!=(B/'app/assets').resolve():
+ shutil.copytree(V2/'app/assets',B/'app/assets',dirs_exist_ok=True)
 SRC=B/'source/narrative-v03'
 lines=(SRC/'01.txt').read_text().splitlines()
 inventory=json.loads((SRC/'inventory.json').read_text())[0]
