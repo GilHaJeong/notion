@@ -1,0 +1,92 @@
+[
+  {
+    "path": "app/v04/app.js",
+    "bytes": 33982,
+    "sha256": "f353031bbe18b1423731a0ddaf465e16d35e19d90cac060a6be8dd93bd0ce5f2"
+  },
+  {
+    "path": "app/v04/boot.js",
+    "bytes": 1042,
+    "sha256": "82c68311bdcb3e9e16a925477826f8772e7f915aef670c134c09b79a83e9409e"
+  },
+  {
+    "path": "app/v04/bundle.js",
+    "bytes": 78293,
+    "sha256": "42eac4aac8d8a897dc8fec99744acf91cd5a89d787a17d6c57075593748b2822"
+  },
+  {
+    "path": "app/v04/data/content-v01.json",
+    "bytes": 78267,
+    "sha256": "6098b06cbdb4218237cd304e5b96a25e6557cc52d0561e302a65e0ee5b4670a5"
+  },
+  {
+    "path": "app/v04/icon-192.png",
+    "bytes": 6544,
+    "sha256": "46bfdb2f8848328b27703f70f853467e6beea9175d83161c2ea1e70c67662285"
+  },
+  {
+    "path": "app/v04/icon-512.png",
+    "bytes": 3299,
+    "sha256": "489fcbba47c3ff1a2371716df3a91e1816b570677c7acaf1dd42889f6a7c62cf"
+  },
+  {
+    "path": "app/v04/icon.svg",
+    "bytes": 349,
+    "sha256": "a606eccb53472c3b899af0c9ed95fd566ed361e06ae50ed38f1b1bbe873e6e61"
+  },
+  {
+    "path": "app/v04/index.html",
+    "bytes": 3593,
+    "sha256": "20477d2544ad86ce6785514084d690b639c2655fed4cd003d196d4ae99a57ed0"
+  },
+  {
+    "path": "app/v04/manifest.webmanifest",
+    "bytes": 506,
+    "sha256": "b7646f929bddb7210effc2cea3d7bfa74301a22db96dc49177952242ce4094a6"
+  },
+  {
+    "path": "app/v04/offline.js",
+    "bytes": 14260,
+    "sha256": "decce172c8fc139fe0b138ca5d225832b86cf9e8713670a7404edc436c0fbaa7"
+  },
+  {
+    "path": "app/v04/package.json",
+    "bytes": 2066,
+    "sha256": "31e01858a74c2b64e92a0510ecd0d600578729adf852ea02a91826e914a89c80"
+  },
+  {
+    "path": "app/v04/source-no01-03.txt",
+    "bytes": 13351,
+    "sha256": "db1881f7faf3cab2fbdbd5430ec4e8f58351e59a28481420798f63f76bc0485f"
+  },
+  {
+    "path": "app/v04/styles.css",
+    "bytes": 16686,
+    "sha256": "664e83bdee8ddd2813392ff581821645e32894e7b7c138af0ab2e62bdacb967a"
+  },
+  {
+    "path": "app/v04/sw.js",
+    "bytes": 1277,
+    "sha256": "0f8c0294d19f6e3c75acce0bf6d60c09bdb74f2980a933a575419fed0325be3f"
+  },
+  {
+    "path": "app/assets/score/no01-canonical-page7.png",
+    "bytes": 257757,
+    "sha256": "90f6ebf8ee460c35331f6b986de064cdff5e42bf1e71da78ca4b8eb6b58bee14"
+  },
+  {
+    "path": "app/assets/score/no01-canonical-page7-system1.png",
+    "bytes": 95576,
+    "sha256": "a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8"
+  },
+  {
+    "path": "app/assets/score/no01-page8.png",
+    "bytes": 183706,
+    "sha256": "ae38bdff1c3fb52c248b7f3300aa30541ac271f87cda0757b282745554b9b6eb"
+  },
+  {
+    "path": "app/assets/score/no01-page8-system16.png",
+    "bytes": 70921,
+    "sha256": "352396411aeb529a02d9180e3875c291877b576a1c220dc9584d3c1b0be23887"
+  }
+]

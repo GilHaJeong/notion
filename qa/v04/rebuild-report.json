@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "app/v04/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v04/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v04/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v04/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v04/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v04/sw.js",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7-system1.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8-system16.png",
+      "matches": true
+    }
+  ],
+  "builderOutput": "v04: 8 package items; 18 app/image files; audio unchanged; source crosswalk candidate.\n"
+}

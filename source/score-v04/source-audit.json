@@ -1,0 +1,102 @@
+{
+  "source": {
+    "pdfSha256": "1bddf7938766633cc40053a1eacb5d42f7deb9f4216d310ee34e8eddbc573a74",
+    "pdfPages": 184,
+    "renderScale": 2.5,
+    "dimensions": [
+      1488,
+      2105
+    ],
+    "page8Sha256": "ae38bdff1c3fb52c248b7f3300aa30541ac271f87cda0757b282745554b9b6eb",
+    "page8CropPixels": [
+      0,
+      760,
+      1438,
+      1320
+    ],
+    "review": {
+      "cue02": "원문 m14 부근 / PDF 가사 진입 m16 · 자동 치환하지 않음",
+      "forte": "Tenor f at m16 observed",
+      "ff": "원문 ff 표기를 No.1 PDF p3–4에서 확인하지 못함 · 검토 대기",
+      "timing": "기존 q86 후보 시간축·음원 유지. 자동 서사 동기화·Cue 반복 잠금"
+    },
+    "priorPage7RasterExactMatch": false,
+    "page7RenderPolicy": "v04 uses fresh p7/p8 renders from the same PDF; previous v03 images unchanged",
+    "page7CropPixels": [
+      60,
+      395,
+      1430,
+      1020
+    ]
+  },
+  "anchors": [
+    {
+      "id": "N01-P7-CUE01",
+      "cueId": "CUE-N01-01",
+      "stage": "isolation",
+      "printedPage": 7,
+      "pdfPage": 3,
+      "measure": 1,
+      "lyric": "너희",
+      "role": "Tenor solo",
+      "regionPdfPoints": [
+        76,
+        236,
+        172,
+        282
+      ],
+      "markerPdfPoints": [
+        50,
+        250
+      ],
+      "sourceDeclaredMeasure": 1,
+      "status": "VISUALLY_CHECKED_CANDIDATE",
+      "semanticStatus": "TEXT_ANCHOR_OBSERVED",
+      "timeRange": null,
+      "normalizedRect": {
+        "x": 0.12773109243697478,
+        "y": 0.28028503562945367,
+        "width": 0.16134453781512606,
+        "height": 0.05463182897862233
+      },
+      "markerNormalized": {
+        "x": 0.08403361344537816,
+        "y": 0.29691211401425177
+      }
+    },
+    {
+      "id": "N01-P8-CUE02",
+      "cueId": "CUE-N01-02",
+      "stage": "revelation",
+      "printedPage": 8,
+      "pdfPage": 4,
+      "measure": 16,
+      "lyric": "주의 날에",
+      "role": "Tenor solo continued from printed p7",
+      "regionPdfPoints": [
+        42,
+        330,
+        195,
+        381
+      ],
+      "markerPdfPoints": [
+        20,
+        344
+      ],
+      "sourceDeclaredMeasure": 14,
+      "status": "VISUALLY_CHECKED_CANDIDATE",
+      "semanticStatus": "SOURCE_START_VS_LYRIC_ENTRY_REVIEW_REQUIRED",
+      "timeRange": null,
+      "normalizedRect": {
+        "x": 0.07058823529411765,
+        "y": 0.3919239904988123,
+        "width": 0.2571428571428571,
+        "height": 0.060570071258907364
+      },
+      "markerNormalized": {
+        "x": 0.03361344537815126,
+        "y": 0.4085510688836104
+      }
+    }
+  ]
+}

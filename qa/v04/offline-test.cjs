@@ -1,0 +1,77 @@
+const {chromium}=require('/vercel/sandbox/node_modules/playwright');
+const fs=require('fs'),path=require('path'),assert=require('assert'),crypto=require('crypto');
+const ROOT='/data/oratorio_v04',BASE='http://localhost:8775/app/v04/',PROFILE=ROOT+'/qa/profile';
+const manifestPath=ROOT+'/app/v04/package.json',original=fs.readFileSync(manifestPath),test=[];let errors=[];
+const check=(name,ok)=>{assert(ok,name);test.push({name,status:'PASS'});};
+const opts={executablePath:'/usr/local/bin/chromium',headless:true,args:['--no-sandbox'],viewport:{width:820,height:1180}};
+let context;
+const ready=async p=>{await p.waitForFunction(()=>!!window.__oratorioReview,{timeout:20000});};
+const save=async p=>{await p.locator('#package-save').click();await p.waitForFunction(()=>!window.OratorioOffline.busy);};
+const registry=async p=>p.evaluate(()=>window.OratorioOffline.registry);
+(async()=>{
+ fs.rmSync(PROFILE,{recursive:true,force:true});fs.writeFileSync(ROOT+'/qa/fail-state.json','{}');fs.rmSync(ROOT+'/qa/fail-log.jsonl',{force:true});
+ context=await chromium.launchPersistentContext(PROFILE,opts);let p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(BASE);await ready(p);
+ check('HTTPS/localhost service worker와 앱 셸 저장',await p.evaluate(()=>OratorioOffline.supported&&OratorioOffline.shellReady));
+ await p.locator('[data-part="T"]').click();await p.locator('#first-next').click();await p.locator('[data-action="library"]').click();
+ check('초기 자료함: 미저장 상태',await p.locator('#library-state').textContent()==='아직 저장하지 않음');
+ await p.screenshot({path:ROOT+'/qa/library-not-saved-tablet.png',fullPage:true});
+ // Actual quota error, then actual hash verification failure.
+ await p.evaluate(()=>{window.originalEstimate=navigator.storage.estimate.bind(navigator.storage);navigator.storage.estimate=async()=>({quota:100,usage:90});});await save(p);
+ check('용량 부족을 다운로드 전에 차단',await p.locator('#library-error').textContent().then(s=>s.includes('공간이 부족'))&&!(await registry(p)).active);
+ await p.evaluate(()=>navigator.storage.estimate=window.originalEstimate);
+ fs.writeFileSync(ROOT+'/qa/fail-state.json',JSON.stringify({match:'laodicea-p149.png'}));await save(p);
+ check('SHA-256 불일치 자료 설치 차단',!(await registry(p)).active&&await p.locator('#library-error').textContent().then(s=>s.includes('SHA-256')));
+ const r1=await registry(p);check('실패해도 확인된 부분 저장 유지',!!r1.staging&&await p.evaluate(async()=>{const c=await caches.open(OratorioOffline.registry.staging.cache);return (await c.keys()).length===5;}));
+ check('실패 자동 재시도 최대 3회',fs.readFileSync(ROOT+'/qa/fail-log.jsonl','utf8').trim().split('\n').length===3);
+ await p.screenshot({path:ROOT+'/qa/library-partial-tablet.png',fullPage:true});
+ fs.writeFileSync(ROOT+'/qa/fail-state.json','{}');const resumed=[];p.on('request',r=>{if(r.url().includes('/assets/'))resumed.push(r.url());});await save(p);
+ check('이어받기: 미완료3개만 다운로드',resumed.length===3&&resumed.some(u=>u.includes('laodicea-p149'))&&resumed.filter(u=>u.includes('page8')).length===2);
+ check('모든 파일 검증 후 오프라인 준비 표시',!!(await registry(p)).active&&await p.locator('#library-state').textContent()==='오프라인 사용 가능');
+ check('저장 자료 8개 해시 확인',await p.evaluate(async()=>{const rec=OratorioOffline.registry.active,c=await caches.open(rec.cache);return (await c.keys()).length===8;}));
+ await p.screenshot({path:ROOT+'/qa/library-ready-tablet.png',fullPage:true});
+ await p.locator('#library-close').click();await p.locator('[data-open="NO01"]').click();await p.locator('section [data-route="practice"]').click();await p.locator('.selfcheck > summary').click();await p.locator('[data-check="almost"]').click();await p.locator('#play').click();await p.waitForFunction(()=>window.__oratorioReview.playing);
+ check('저장 뒤 실제 음원 decode와 두 stem 재생',await p.evaluate(()=>__oratorioReview.audioDecoded&&__oratorioReview.sourceCount===2));
+ await p.locator('[data-action="library"]').click();await save(p);check('연습 중 자료 교체 차단',await p.locator('#library-error').textContent().then(s=>s.includes('연습을 정지')));
+ await p.locator('#library-close').click();await p.locator('#play').click();
+ await context.setOffline(true);await p.reload();await ready(p);check('오프라인 새로고침과 기록 복구',await p.evaluate(()=>__oratorioReview.state.part==='T'&&__oratorioReview.state.progress.NO01.status==='nearly_stable'));
+ await p.locator('[data-action="resume"]').click();await p.locator('#play').click();await p.waitForFunction(()=>__oratorioReview.playing);check('오프라인 음원 재생',await p.evaluate(()=>__oratorioReview.audioDecoded&&__oratorioReview.audioContextState==='running'));
+ await p.locator('#play').click();await p.screenshot({path:ROOT+'/qa/offline-practice-tablet.png',fullPage:true});await context.close();context=null;
+ // Cold browser restart, no network, same persistent profile.
+ context=await chromium.launchPersistentContext(PROFILE,{...opts,offline:true});p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto(BASE);await ready(p);
+ check('오프라인 재실행 후 자료함 바로가기 상태',await p.locator('[data-offline-summary]').textContent()==='오프라인 사용 가능');check('브라우저 종료 후 오프라인 재실행',await p.evaluate(()=>OratorioOffline.shellReady&&OratorioOffline.activeValid));
+ await p.locator('[data-action="resume"]').click();await p.locator('#play').click();await p.waitForFunction(()=>__oratorioReview.playing);check('종료·재실행 후 오프라인 음원 재생',await p.evaluate(()=>__oratorioReview.audioDecoded));await p.locator('#play').click();
+ await context.setOffline(false);await p.locator('[data-action="library"]').click();
+ // Build changed-data fixture. Five existing binaries are unchanged.
+ const m=JSON.parse(original),content=JSON.parse(fs.readFileSync(ROOT+'/app/v04/data/content-v01.json'));
+ content.config.build='qa-data-revision-2';const bytes=Buffer.from(JSON.stringify(content));fs.writeFileSync(ROOT+'/app/v04/data/content-v02-QA.json',bytes);
+ m.version='0.4.0-data.2-QA';m.items[0]={...m.items[0],url:'data/content-v02-QA.json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};
+ fs.writeFileSync(manifestPath,JSON.stringify(m));await p.locator('#package-check').click();await p.waitForFunction(()=>OratorioOffline.manifest?.version.includes('data.2'));
+ check('수정본 감지·기존 자료 유지 표시',await p.locator('#library-state').textContent().then(s=>s.includes('수정본 있음')));
+ // Failed newer version must keep old active version and user progress.
+ const progressBefore=await p.evaluate(()=>localStorage.getItem('oratorio.v1.progress.songs'));
+ fs.writeFileSync(ROOT+'/qa/fail-state.json',JSON.stringify({match:'content-v02-QA.json'}));await save(p);
+ check('업데이트 실패: 기존 active 자료 유지',(await registry(p)).active.manifest.version==='0.4.0-data.1');
+ check('업데이트 실패: 연습 기록 유지',await p.evaluate(()=>localStorage.getItem('oratorio.v1.progress.songs'))===progressBefore);
+ await p.screenshot({path:ROOT+'/qa/library-update-failed-tablet.png',fullPage:true});
+ await context.setOffline(true);await p.reload();await ready(p);await p.locator('[data-action="resume"]').click();await p.locator('#play').click();await p.waitForFunction(()=>__oratorioReview.playing);check('업데이트 실패 뒤 기존 자료 오프라인 재생',await p.evaluate(()=>__oratorioReview.audioDecoded));await p.locator('#play').click();
+ await context.setOffline(false);fs.writeFileSync(ROOT+'/qa/fail-state.json','{}');await p.locator('[data-action="library"]').click();await p.locator('#package-check').click();await p.waitForFunction(()=>OratorioOffline.manifest?.version.includes('data.2'));
+ const patchRequests=[];p.on('request',r=>{if(r.url().includes('/assets/')||r.url().includes('content-v02-QA'))patchRequests.push(r.url());});await save(p);
+ check('변경된 데이터 1개만 다운로드',patchRequests.length===1&&patchRequests[0].includes('content-v02-QA'));
+ const updated=await registry(p);check('성공 시에만 자료 교체·이전본 보존',updated.active.manifest.version.includes('data.2')&&updated.previous.manifest.version==='0.4.0-data.1'&&updated.staging===null);
+ await p.locator('#package-apply').click();await ready(p);check('새로고침 후 새 데이터 적용',await p.evaluate(()=>ORATORIO_BUNDLE.config.build==='qa-data-revision-2'));
+ await p.locator('[data-action="library"]').click();await p.locator('#package-rollback').click();await p.waitForFunction(()=>OratorioOffline.registry.active.manifest.version==='0.4.0-data.1');check('이전 버전 무결성 확인 후 복구',await p.evaluate(()=>OratorioOffline.activeValid));
+ await p.locator('#library-close').click();await p.reload();await ready(p);check('복구 후 원래 데이터 사용',await p.evaluate(()=>ORATORIO_BUNDLE.config.build==='unified-internal-v0.4.0'));
+ fs.writeFileSync(manifestPath,original);await p.locator('[data-action="library"]').click();await p.locator('#package-check').click();await p.waitForFunction(()=>OratorioOffline.manifest?.version==='0.4.0-data.1');
+ for(const [w,h] of [[390,844],[820,1180],[1180,820]]){await p.setViewportSize({width:w,height:h});check(`${w} 자료함 가로 넘침 없음`,await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.screenshot({path:ROOT+`/qa/library-${w}x${h}.png`,fullPage:true});}
+ await p.setViewportSize({width:390,height:844});await p.evaluate(()=>{const d=document.querySelector('#offline-dialog');d.scrollTop=d.scrollHeight;});await p.screenshot({path:ROOT+'/qa/library-phone-actions.png',fullPage:true});
+ await p.evaluate(async()=>{const rec=OratorioOffline.registry.active,c=await caches.open(rec.cache),item=rec.manifest.items.find(i=>i.key==='tenor');await c.delete(OratorioOffline.itemURL(item));});
+ await p.locator('#library-close').click();await p.reload();await ready(p);check('저장 파일 유실 시 준비 완료 표시 차단',await p.evaluate(()=>!OratorioOffline.activeValid)&&await p.locator('[data-offline-summary]').textContent()==='저장 자료 확인 필요');
+ await p.locator('[data-action="library"]').click();await save(p);check('유실 파일 보수 후 무결성 재확인',await p.evaluate(()=>OratorioOffline.activeValid));
+ p.once('dialog',d=>d.accept());await p.locator('#package-delete').click();await p.waitForFunction(()=>OratorioOffline.registry.active===null);
+ check('자료 삭제 후 연습 기록 유지',await p.evaluate(()=>localStorage.getItem('oratorio.v1.progress.songs'))===progressBefore);
+ await p.waitForFunction(()=>document.querySelector('#library-state').textContent==='아직 저장하지 않음');check('자료 삭제 후 준비 완료 표시 해제',await p.locator('#library-state').textContent()==='아직 저장하지 않음');
+ await p.screenshot({path:ROOT+'/qa/library-deleted-phone.png',fullPage:true});
+ check('JavaScript 예외 없음',errors.length===0);
+ fs.writeFileSync(ROOT+'/qa/offline-report.json',JSON.stringify({testedAt:new Date().toISOString(),environment:'headless Chromium, real service worker/cache storage on localhost; persistent-profile offline cold restart',tests:test,errors,exclusions:['실제 iPad/Safari/Android 기기','자연 가창·음표 정본 QA','정식 공개 승인'],fixtureVersions:['0.4.0-data.1','0.4.0-data.2-QA']},null,2));
+ console.log(JSON.stringify({passed:test.length,errors}));await context.close();context=null;fs.rmSync(PROFILE,{recursive:true,force:true});fs.rmSync(ROOT+'/app/v04/data/content-v02-QA.json',{force:true});process.exit(0);
+})().catch(async e=>{console.error(e.stack);fs.writeFileSync(manifestPath,original);fs.writeFileSync(ROOT+'/qa/offline-failure.json',JSON.stringify({tests:test,error:e.stack},null,2));if(context)await context.close();process.exit(1);});

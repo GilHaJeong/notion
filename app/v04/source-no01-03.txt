@@ -1,0 +1,286 @@
+ORATORIO N01-03 NARRATIVE & CUE SPECIFICATION (v02)
+A. 곡 기본 정보
+곡 번호: No. 1 ~ No. 3 (오라토리오 서막: 프롤로그 연작)
+곡 제목:
+No. 1: 나팔 소리 같은 큰 음성을 들으니 (Tenor Recitative)
+No. 2: 네가 보는 것을 두루마리에 써서 (Soli / Small Group)
+No. 3: 두려워하지 말라 나는 처음이요 마지막이니 (Alto Recit. & Solo with Chorus)
+전체 한 줄 요약: 밧모섬에 유배된 사도 요한의 고립과 환난 속에서 울려 퍼진 신적 나팔 소리와 일곱 교회를 향한 발신 명령, 그리고 부활하신 그리스도의 영원한 주권과 일곱 별·일곱 금 촛대의 영적 비밀을 선포하는 거대한 묵시적 서막.
+서사의 핵심 방향: 척박한 절해고도(밧모섬)의 침묵과 실존적 고난을 테너의 독백(Sprechgesang)으로 연 뒤, 두루마리 기록 명령을 거쳐, 사망과 음부의 권세를 깨뜨리신 그리스도의 장엄한 위로(알토 독창 및 합창)로 상승하여 전곡(36곡)을 관통하는 신적 정당성을 확립하는 '고립-계시-명령-위로-신비'의 5단계 서막 아크.
+작성일: 2026-09-20
+버전: v02 (GPT 아키텍처 리뷰 및 6대 검증 게이트 반영 개정본)
+작성 모델 / 계열: Gemini 계열 (Flash)
+B. 서사 아크 (5단계: 고립 · 계시 · 명령 · 위로 · 신비)
+정본 대조 전 Gemini 납품 상태는 CANDIDATE로 통일하며, 악보 근거 위치(evidence)를 명시합니다.
+단계
+단계명
+마디 범위
+텍스트 앵커 및 서사 설명
+검증 상태
+근거 (Evidence)
+1
+고립
+No. 1
+m.1 ~ m.13
+[FACT] Recit. (♩=c.86), 피아노 여린 화음(p), 테너 독백조(mp).
+(텍스트: "너희 형제요 예수의 환난과 나라와 참음에 동참한 나 요한은... 밧모라 하는 섬에 있었더니")
+[INTERPRETATION] 로마 제국의 유배지 밧모섬의 황량한 정적과 실존적 고독감의 서정적 구체화.
+CANDIDATE
+page: 7-8
+measure: N01:m.1-m.13
+score_marking: "Recit. ♩=c.86, Tenor solo mp"
+2
+계시
+No. 1
+m.14 ~ m.21
+[FACT] 다이내믹 급상승(f, ff), 긴박한 붓점 및 8분음표 상행 아르페지오.
+(텍스트: "주의 날에 내가 성령에 감동되어 내 뒤에서 나는 나팔 소리 같은 큰 음성을 들으니")
+[INTERPRETATION] 인간의 정적을 찢고 침투하는 초월적 성령의 감동과 묵시의 거대한 문이 열리는 청각적 충격.
+CANDIDATE
+page: 8
+measure: N01:m.14-m.21
+score_marking: "나팔 소리 같은 큰 음성, f"
+3
+명령
+No. 2
+m.22 ~ m.36
+[FACT] Andantino dolce e misterioso (♩=82), 3/4 ➔ 4/4 ➔ 2/4 박자 전환, Soli / Small Group 교차.
+(텍스트: "네가 보는 것을 두루마리에 써서... 일곱 교회에 보내라")
+[INTERPRETATION] 개인적 신비 체험에 머물지 않고 역사 속 지상 교회로 파송되는 예언자적 기록 사명의 공식 수여.
+CANDIDATE
+page: 9-10
+measure: N02:m.22-m.36
+score_marking: "Andantino dolce e misterioso ♩=82, Soli"
+4
+위로
+No. 3
+m.1 ~ m.52
+[FACT] Recit. (♩=c.80) ➔ Andante sostenuto, 알토 독창 주도, 풍성한 중저음 선율.
+(텍스트: "두려워하지 말라 나는 처음이요 마지막이니... 볼지어다 이제 세세토록 살아 있어 사망과 음부의 열쇠를 가졌노니")
+[INTERPRETATION] 압도적 거룩함 앞에 엎드러진 요한을 일으켜 세우시는 부활 승리자 그리스도의 장엄한 자기 계시와 안위.
+CANDIDATE
+page: 10-12
+measure: N03:m.1-m.52
+score_marking: "Recit. ♩=c.80, Alto solo, Andante sostenuto"
+5
+신비
+No. 3
+m.53 ~ m.70
+[FACT] Chorus 및 Alto divisi 합류, 16분음표 분산 화음 반주, 장엄한 종지.
+(텍스트: "장차 될 일을 기록하라... 일곱 별의 비밀과 일곱 금 촛대라")
+[INTERPRETATION] 일곱 교회를 붙드신 그리스도의 절대 주권과 교회의 영적 비밀이 공개되며 1부 본편으로 연결되는 신비로운 결어.
+CANDIDATE
+page: 12-14
+measure: N03:m.53-m.70
+score_marking: "Chorus 합류, 일곱 별의 비밀"
+C. Cue 목록 (Theological Cue Layer 실행 원본)
+CUE-N01-01: 밧모섬의 고립과 예언자의 독백 (Sprechgesang)
+Cue ID: CUE-N01-01
+위치: No. 1 m.1 (텍스트 앵커: "너희 형제요 예수의 환난과 나라와 참음에 동참한 나 요한은")
+Evidence:
+source: original_score_pdf / Master_Canvas
+page: 7
+measure: "N01:m.1"
+score_marking: "Recit. (♩=c.86), Tenor solo mp, Piano p, mf"
+verification_status: CANDIDATE
+Music:
+[FACT] Recit. (♩=c.86). 피아노의 절제되고 신비로운 지속 화음 위로 테너 솔로 mp 단독 진입.
+[INTERPRETATION] 거대한 관현악 총주 이전에 홀로 남겨진 노사도의 황량한 침묵과 내적 고뇌를 드러내는 미니멀한 음향적 출발점.
+Theology:
+계시록 1:9. 고난에서 면제된 승리주의가 아닌, 지상 교회가 겪는 환난과 참음에 철저히 동참한 성도의 연대성 천명.
+Singing:
+[PROPOSAL] 테너는 오페라적 과시를 철저히 억제하고, 바로크 수난곡의 복음사가(Evangelist)처럼 또박또박 말을 건네는 낭송조(Sprechgesang)로 딕션을 구사할 것.
+Risk:
+[RISK_NOTE] 서두의 여린 진입에서 호흡이 흔들리거나 음정이 플랫(Flat)되지 않도록 횡격막의 긴장감을 유지한 상태로 시작할 것.
+CUE-N01-02: 성령의 나팔 소리 침투 (Volumetric Brass Attack)
+Cue ID: CUE-N01-02
+위치: No. 1 m.14 부근 (텍스트 앵커: "주의 날에 내가 성령에 감동되어 내 뒤에서 나는 나팔 소리 같은 큰 음성을 들으니")
+Evidence:
+source: original_score_pdf
+page: 8
+measure: "N01:m.14-m.21"
+score_marking: "f, ff crescendo, 나팔 소리 모티프"
+verification_status: CANDIDATE
+Music:
+[FACT] mp 독백에서 예고 없이 f ➔ ff로 솟구치며 나팔 음형의 금관/건반 아르페지오 및 붓점 패시지 폭발.
+[INTERPRETATION] 인간 역사 안으로 뚫고 들어오는 신적 카이로스(Kairos)의 충격파를 청각적으로 극대화.
+Theology:
+계시록 1:10. '주의 날'에 임한 성령의 압도적 장악. 요한의 주관적 감상이 아닌 하나님의 직접적 계시 개시.
+Singing:
+[PROPOSAL] 테너는 "나팔 소리 같은 큰 음성을 들으니" 구절에서 드라마틱 테너의 두성 공명을 최대로 개방하여 압도적인 투사력을 발휘할 것.
+Risk:
+[RISK_NOTE] 급격한 음량 증폭 시 목에 힘이 들어가 음정이 날카롭게 치솟는 샤프(Sharp) 현상 경계.
+CUE-N02-01: 두루마리 기록과 일곱 교회 발신 명령
+Cue ID: CUE-N02-01
+위치: No. 2 m.22 ➔ m.29 (텍스트 앵커: "네가 보는 것을 두루마리에 써서... 일곱 교회에 보내라")
+Evidence:
+source: original_score_pdf
+page: 9-10
+measure: "N02:m.22-m.36"
+score_marking: "Andantino dolce e misterioso ♩=82, Soli / Small Group, 3/4 -> 4/4 -> 2/4"
+verification_status: CANDIDATE
+Music:
+[FACT] Andantino dolce e misterioso (♩=82). 두 독창자(Soli) 및 소규모 중창이 교차하며 3/4, 4/4, 2/4 박자로 유연하게 유영.
+[INTERPRETATION] 준엄한 명령이면서도 신성한 은혜의 비밀을 담은 두루마리의 거룩한 무게감을 유려한 성악 텍스처로 표현.
+Theology:
+계시록 1:11. "에베소, 서머나, 버가모, 두아디라, 사데, 빌라델비아, 라오디게아". 1세기 로마 우편 도로망을 따라 흩어진 구체적 역사적 공동체를 향한 하나님의 구속사적 통섭.
+Singing:
+[PROPOSAL] 독창자들은 박자 분할이 변화할 때 호흡의 끈을 놓지 말고 앙상블 간의 블렌딩을 섬세하게 조율할 것. 도시 이름 나열 시 자음 어택을 명확히 전달.
+Risk:
+[RISK_NOTE] 3/4박과 4/4박이 교차할 때 박자 템포감이 흔들려 반주와 불일치할 위험.
+CUE-N03-01: 부활의 주권 선포 (두려워하지 말라)
+Cue ID: CUE-N03-01
+위치: No. 3 m.1 ➔ m.47 (텍스트 앵커: "두려워하지 말라 나는 처음이요 마지막이니... 볼지어다 이제 세세토록 살아 있어")
+Evidence:
+source: original_score_pdf
+page: 10-12
+measure: "N03:m.1-m.52"
+score_marking: "Recit. ♩=c.80, Alto solo, Andante sostenuto"
+verification_status: CANDIDATE
+Music:
+[FACT] Recit. (♩=c.80) 알토 독창 진입 후 m.47에서 Andante sostenuto로 전환. 묵직하고 따뜻한 저음 현악 반주.
+[INTERPRETATION] 죽음의 권세를 이기고 영원히 살아 계신 그리스도의 모성적이고 깊은 안위의 음성을 알토의 콘트랄토 톤으로 형상화.
+Theology:
+계시록 1:17-18. 두려움에 엎드러진 교회를 향해 "내가 전에 죽었었노라, 이제 세세토록 살아 있어 사망과 음부의 열쇠를 가졌노니"라 선언하시는 부활 신앙의 정점.
+Singing:
+[PROPOSAL] 알토 솔로는 흉성 공명을 풍성하게 유지하되 어둡게 가라앉지 않도록 마스크 공명(Chiaroscuro)을 균형 있게 섞어 따뜻하고 위엄 있는 소리를 구축할 것.
+Risk:
+[RISK_NOTE] 저음역 도약 시 호흡이 풀려 음정이 처지거나 가사 전달력이 저하될 위험.
+CUE-N03-02: 일곱 별과 일곱 금 촛대의 비밀 (Chorus Ingress)
+Cue ID: CUE-N03-02
+위치: No. 3 m.53 ~ m.70 (텍스트 앵커: "장차 될 일을 기록하라... 일곱 별의 비밀과 일곱 금 촛대라")
+Evidence:
+source: original_score_pdf
+page: 12-14
+measure: "N03:m.53-m.70"
+score_marking: "Chorus 진입, pp -> mf -> f crescendo"
+verification_status: CANDIDATE
+Music:
+[FACT] 합창 전 성부의 점진적 진입, 16분음표 아르페지오 건반 패시지 위 화성적 팽창.
+[INTERPRETATION] 지상의 고난받는 일곱 교회가 실은 그리스도의 오른손 안에 붙들린 찬란한 '별'이자 '금 촛대'라는 천상적 진실의 장엄한 현현.
+Theology:
+계시록 1:19-20. 교회의 비밀(Mystery). 핍박받는 지상 교회의 본질은 하나님의 손안에서 영원히 빛나는 영광스러운 존재임을 선포.
+Singing:
+[PROPOSAL] 합창단은 '볼지어다'와 '일곱 별의 비밀'을 노래할 때 수평적 레가토와 수직적 화음 일치를 동시에 구현하며 신비로운 톤을 잃지 말 것.
+Risk:
+[RISK_NOTE] 크레셴도 구간에서 소리를 지르지 않고 둥근 두성 믹스를 유지하여 1부 본편(No. 4 에베소)으로 자연스럽게 이어지도록 안배.
+D. Astra 연동용 메타데이터 (TypeScript / JSON 규격)
+{
+  "movement_group": "Prologue (No.1-3)",
+  "movement_target": "No.1-No.3",
+  "overall_summary": "밧모섬 요한의 고립과 환난 속에서 울려 퍼진 신적 나팔 소리, 두루마리 기록 명령, 그리고 부활하신 그리스도의 영원한 주권과 일곱 별·금 촛대의 신비 선포",
+  "narrative_stages": [
+    {
+      "stage": 1,
+      "name": "고립",
+      "movement": "N01",
+      "start_measure": 1,
+      "end_measure": 13,
+      "end_is_approximate": false,
+      "status": "CANDIDATE"
+    },
+    {
+      "stage": 2,
+      "name": "계시",
+      "movement": "N01",
+      "start_measure": 14,
+      "end_measure": 21,
+      "end_is_approximate": false,
+      "status": "CANDIDATE"
+    },
+    {
+      "stage": 3,
+      "name": "명령",
+      "movement": "N02",
+      "start_measure": 22,
+      "end_measure": 36,
+      "end_is_approximate": false,
+      "status": "CANDIDATE"
+    },
+    {
+      "stage": 4,
+      "name": "위로",
+      "movement": "N03",
+      "start_measure": 1,
+      "end_measure": 52,
+      "end_is_approximate": false,
+      "status": "CANDIDATE"
+    },
+    {
+      "stage": 5,
+      "name": "신비",
+      "movement": "N03",
+      "start_measure": 53,
+      "end_measure": 70,
+      "end_is_approximate": true,
+      "status": "CANDIDATE"
+    }
+  ],
+  "cues": [
+    {
+      "cue_id": "CUE-N01-01",
+      "movement": "N01",
+      "measure": 1,
+      "tags": ["Music", "Singing"],
+      "priority": "HIGH",
+      "status": "CANDIDATE",
+      "evidence": {
+        "page": 7,
+        "measure": "N01:m.1",
+        "score_marking": "Recit. (♩=c.86), Tenor solo mp, Piano p, mf"
+      }
+    },
+    {
+      "cue_id": "CUE-N01-02",
+      "movement": "N01",
+      "measure": 14,
+      "tags": ["Music", "Theology", "Singing"],
+      "priority": "CRITICAL",
+      "status": "CANDIDATE",
+      "evidence": {
+        "page": 8,
+        "measure": "N01:m.14-m.21",
+        "score_marking": "f, ff crescendo, 나팔 소리 모티프"
+      }
+    },
+    {
+      "cue_id": "CUE-N02-01",
+      "movement": "N02",
+      "measure": 22,
+      "tags": ["Theology", "Singing"],
+      "priority": "HIGH",
+      "status": "CANDIDATE",
+      "evidence": {
+        "page": 9,
+        "measure": "N02:m.22-m.36",
+        "score_marking": "Andantino dolce e misterioso ♩=82, Soli"
+      }
+    },
+    {
+      "cue_id": "CUE-N03-01",
+      "movement": "N03",
+      "measure": 1,
+      "tags": ["Theology", "Singing"],
+      "priority": "HIGH",
+      "status": "CANDIDATE",
+      "evidence": {
+        "page": 10,
+        "measure": "N03:m.1-m.52",
+        "score_marking": "Recit. ♩=c.80, Alto solo, Andante sostenuto"
+      }
+    },
+    {
+      "cue_id": "CUE-N03-02",
+      "movement": "N03",
+      "measure": 53,
+      "tags": ["Music", "Theology", "Risk"],
+      "priority": "HIGH",
+      "status": "CANDIDATE",
+      "evidence": {
+        "page": 12,
+        "measure": "N03:m.53-m.70",
+        "score_marking": "Chorus 진입, pp -> mf -> f crescendo"
+      }
+    }
+  ]
+}
