@@ -1,0 +1,1245 @@
+{
+  "whole": {
+    "tests": [
+      {
+        "name": "이전 반복 켜짐 설정이어도 새 기본은 전곡·반복 꺼짐",
+        "status": "PASS"
+      },
+      {
+        "name": "기존 사용자 준비 기록 보존",
+        "status": "PASS"
+      },
+      {
+        "name": "홈에 전곡 듣기와 구간 연습을 분리",
+        "status": "PASS"
+      },
+      {
+        "name": "홈 전곡 듣기 한 번으로 명시적 재생 시작",
+        "status": "PASS"
+      },
+      {
+        "name": "실제 decode한 전체 파일 길이를 재생 범위로 사용",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡에서는 마디 제한 컨트롤 숨김·반복 잠금",
+        "status": "PASS"
+      },
+      {
+        "name": "3마디 끝에서 끊지 않고 4마디 이후까지 계속",
+        "status": "PASS"
+      },
+      {
+        "name": "실제 전곡 자연 종료·처음부터 끝까지 1회",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡 종료를 구간 반복 횟수로 기록하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡 끝난 뒤 자동 반복 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "완료 상태·다시 재생 버튼 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "다시 재생은 처음부터",
+        "status": "PASS"
+      },
+      {
+        "name": "일시정지 위치 유지·소스 중단",
+        "status": "PASS"
+      },
+      {
+        "name": "일시정지 뒤 이어서 재생 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "이어서 재생은 위치 초기화 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡 청취 중 서사·페이지·팝업 변경도 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "사용자 중단은 실제 소스 중지·처음으로",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡 seek는 3마디에 제한되지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "구간 연습은 사용자가 선택해야 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "명시적으로 켠 구간 반복은 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "전곡 복귀시 짧은 구간·반복 해제",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 전곡 화면 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 중단·범위 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "820 전곡 화면 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 중단·범위 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "390 전곡 화면 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 중단·범위 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인에서도 전곡 파일 두 stem 재생·반복 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 종료 경계·자동 반복 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "웹 예외 없음",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "decodedDuration": 58.60467120181406,
+    "fullContinuousPlaybackTested": true,
+    "environment": "Chromium localhost, actual AudioContext sample-clock playback; not acoustic listen or physical tablet",
+    "rawMIDIBinaryVerified": false
+  },
+  "regression": {
+    "build": "oratorio-unified-internal-v0.5.0",
+    "testedAt": "2026-10-03T03:35:50.463Z",
+    "environment": "sandbox Chromium / hosted localhost service worker; offline restart tested separately",
+    "tests": [
+      {
+        "name": "첫 실행 무선택·진입 잠금",
+        "status": "PASS"
+      },
+      {
+        "name": "초기 가짜 연습 기록 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "파트 선택 활성화",
+        "status": "PASS"
+      },
+      {
+        "name": "홈 라우팅",
+        "status": "PASS"
+      },
+      {
+        "name": "홈 진입만으로 기록 생성하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "곡 상세 연결",
+        "status": "PASS"
+      },
+      {
+        "name": "원본 악보 이미지 로딩",
+        "status": "PASS"
+      },
+      {
+        "name": "실제 AudioContext 재생·시간 진행",
+        "status": "PASS"
+      },
+      {
+        "name": "공통 시간축으로 두 stem 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "트랙 변경·반주 음소거",
+        "status": "PASS"
+      },
+      {
+        "name": "트랙 변경·테너 음소거",
+        "status": "PASS"
+      },
+      {
+        "name": "선택 마디 반복 실제 동작·횟수 저장",
+        "status": "PASS"
+      },
+      {
+        "name": "일시정지 실제 동작",
+        "status": "PASS"
+      },
+      {
+        "name": "seek 선택 구간 내 이동",
+        "status": "PASS"
+      },
+      {
+        "name": "재생 속도 상태",
+        "status": "PASS"
+      },
+      {
+        "name": "역전 구간 자동 정합성",
+        "status": "PASS"
+      },
+      {
+        "name": "자가 체크 저장",
+        "status": "PASS"
+      },
+      {
+        "name": "재접속 파트·자가 체크 복구",
+        "status": "PASS"
+      },
+      {
+        "name": "이어하기 구간 복구",
+        "status": "PASS"
+      },
+      {
+        "name": "미확보 음원 재생 잠금",
+        "status": "PASS"
+      },
+      {
+        "name": "라오디게아 시간축 추정하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "원본 좌표 Cue·시트 연결",
+        "status": "PASS"
+      },
+      {
+        "name": "Music 분석을 대원 시트에 노출하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "36곡 상태 자리·유효 플레이어 분리",
+        "status": "PASS"
+      },
+      {
+        "name": "자가 체크 필터",
+        "status": "PASS"
+      },
+      {
+        "name": "다른 파트에 테너를 잘못 배정하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "820×1180 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "768×1024 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "834×1194 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1024×1366 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390×844 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180×820 가로 페이지 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "동일 출처 외부 CDN 의존 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "브라우저 JS 예외 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "저장 schema 불일치 초기화",
+        "status": "PASS"
+      },
+      {
+        "name": "저장소 접근 거부 안전 처리",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "externalRequests": [
+      "http://localhost:8776/app/v05/",
+      "http://localhost:8776/app/v05/styles.css",
+      "http://localhost:8776/app/v05/bundle.js",
+      "http://localhost:8776/app/v05/offline.js",
+      "http://localhost:8776/app/v05/boot.js",
+      "http://localhost:8776/app/v05/icon.svg",
+      "http://localhost:8776/app/v05/package.json",
+      "http://localhost:8776/app/v05/app.js",
+      "http://localhost:8776/app/assets/score/no01-canonical-page7-system1.png?v=a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8",
+      "http://localhost:8776/app/assets/audio/no01-tenor.mp3?v=081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af",
+      "http://localhost:8776/app/assets/audio/no01-piano.mp3?v=150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0",
+      "http://localhost:8776/app/v05/icon.svg",
+      "http://localhost:8776/app/v05/",
+      "http://localhost:8776/app/v05/styles.css",
+      "http://localhost:8776/app/v05/bundle.js",
+      "http://localhost:8776/app/v05/offline.js",
+      "http://localhost:8776/app/v05/boot.js",
+      "http://localhost:8776/app/v05/icon.svg",
+      "http://localhost:8776/app/v05/package.json",
+      "http://localhost:8776/app/v05/app.js",
+      "http://localhost:8776/app/assets/score/no01-canonical-page7-system1.png?v=a6a91b13611761a265076d534074c150539fd9c8e00e7b8844a011ac693275b8",
+      "http://localhost:8776/app/assets/score/laodicea-p149.png?v=ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566"
+    ],
+    "scope": "runtime only; content canonical QA, acoustic listen, real tablet readability and production approval excluded"
+  },
+  "narrative": {
+    "testedAt": "2026-10-03T03:35:55.563Z",
+    "environment": "Chromium touch-enabled emulator; localhost; not physical tablet",
+    "tests": [
+      {
+        "name": "기존 MIDI 모드로 시작",
+        "status": "PASS"
+      },
+      {
+        "name": "서사 모드 전환 후 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "모드 전환으로 재생 위치 초기화하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "트랙·속도·루프 구간 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "원문 네 레이어 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "두 No1 단계만 조작 가능",
+        "status": "PASS"
+      },
+      {
+        "name": "검증 전 Cue 반복 버튼 잠금",
+        "status": "PASS"
+      },
+      {
+        "name": "다른 서사 읽어도 음악 위치·세대 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "원문 m14와 악보 m16 대조 차이 명시",
+        "status": "PASS"
+      },
+      {
+        "name": "감정 문안 임의 생성하지 않음",
+        "status": "PASS"
+      },
+      {
+        "name": "터치로 원문 팝업 열림",
+        "status": "PASS"
+      },
+      {
+        "name": "팝업 열기 중 MIDI 계속 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "원문 Cue ID 정확히 연결",
+        "status": "PASS"
+      },
+      {
+        "name": "Escape 닫기·초점 복귀",
+        "status": "PASS"
+      },
+      {
+        "name": "MIDI 모드 복귀도 음악 재시작 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "DOCX 추출 원문 텍스트 해시 일치",
+        "status": "PASS"
+      },
+      {
+        "name": "모든 화면 발췌가 원문 위치와 정확히 일치",
+        "status": "PASS"
+      },
+      {
+        "name": "미확인 좌표·시간을 비워 둠",
+        "status": "PASS"
+      },
+      {
+        "name": "1180×820 서사 화면 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180×820 터치 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 팝업이 화면 폭 안에 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "820×1180 서사 화면 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820×1180 터치 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "820 팝업이 화면 폭 안에 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "390×844 서사 화면 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390×844 터치 버튼 44px 이상",
+        "status": "PASS"
+      },
+      {
+        "name": "390 팝업이 화면 폭 안에 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "네트워크 차단 실제 확인",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 재실행에서 서사 데이터 열람",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 서사 모드 실제 음악 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "새 기능 브라우저 예외 없음",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "excluded": [
+      "actual iPad/Safari and Android",
+      "musical listening approval",
+      "automatic narrative synchronization",
+      "new No1 measure hotspots"
+    ]
+  },
+  "score": {
+    "tests": [
+      {
+        "name": "7쪽 m1 후보 앵커 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "8쪽 표시·음악 엔진 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "8쪽 실제 이미지 decode",
+        "status": "PASS"
+      },
+      {
+        "name": "악보 마커 터치로 정확한 Cue 열기",
+        "status": "PASS"
+      },
+      {
+        "name": "악보 터치 중 음악 이동·중지 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "원문14와 관찰16·ff 미확인 명시",
+        "status": "PASS"
+      },
+      {
+        "name": "원문 m14 보존",
+        "status": "PASS"
+      },
+      {
+        "name": "마커 팝업 Escape·초점 복귀",
+        "status": "PASS"
+      },
+      {
+        "name": "보통 표시 중 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "크게 표시 중 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "전체 페이지 표시 중 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p7 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 p8 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p7 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "820 p8 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p7 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 보통: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 보통: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 크게: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 크게: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 전체 페이지: 이미지·좌표·44px 버튼",
+        "status": "PASS"
+      },
+      {
+        "name": "390 p8 전체 페이지: 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "드래그 뒤 잘못된 팝업 차단",
+        "status": "PASS"
+      },
+      {
+        "name": "새 탭으로 후보 팝업 정상 열림",
+        "status": "PASS"
+      },
+      {
+        "name": "수동 단계로7쪽 연결",
+        "status": "PASS"
+      },
+      {
+        "name": "수동 단계로8쪽 연결·Cue반복 잠금",
+        "status": "PASS"
+      },
+      {
+        "name": "좌표는 후보·음원 시간은 null",
+        "status": "PASS"
+      },
+      {
+        "name": "기존 두 음원 해시 불변",
+        "status": "PASS"
+      },
+      {
+        "name": "새 패키지8개 모두 해시 일치",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인8쪽 이미지 decode",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 악보터치 원문 열람",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인8쪽과음악 함께 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "새 악보터치 JS예외 없음",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "environment": "Chromium touch-enabled emulator; actual iPad/Safari not tested",
+    "sourcePdfSha256": "1bddf7938766633cc40053a1eacb5d42f7deb9f4216d310ee34e8eddbc573a74"
+  },
+  "offline": {
+    "testedAt": "2026-10-03T03:38:31.080Z",
+    "environment": "headless Chromium, real service worker/cache storage on localhost; persistent-profile offline cold restart",
+    "tests": [
+      {
+        "name": "HTTPS/localhost service worker와 앱 셸 저장",
+        "status": "PASS"
+      },
+      {
+        "name": "초기 자료함: 미저장 상태",
+        "status": "PASS"
+      },
+      {
+        "name": "용량 부족을 다운로드 전에 차단",
+        "status": "PASS"
+      },
+      {
+        "name": "SHA-256 불일치 자료 설치 차단",
+        "status": "PASS"
+      },
+      {
+        "name": "실패해도 확인된 부분 저장 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "실패 자동 재시도 최대 3회",
+        "status": "PASS"
+      },
+      {
+        "name": "이어받기: 미완료3개만 다운로드",
+        "status": "PASS"
+      },
+      {
+        "name": "모든 파일 검증 후 오프라인 준비 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "저장 자료 8개 해시 확인",
+        "status": "PASS"
+      },
+      {
+        "name": "저장 뒤 실제 음원 decode와 두 stem 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "연습 중 자료 교체 차단",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 새로고침과 기록 복구",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 음원 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 재실행 후 자료함 바로가기 상태",
+        "status": "PASS"
+      },
+      {
+        "name": "브라우저 종료 후 오프라인 재실행",
+        "status": "PASS"
+      },
+      {
+        "name": "종료·재실행 후 오프라인 음원 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "수정본 감지·기존 자료 유지 표시",
+        "status": "PASS"
+      },
+      {
+        "name": "업데이트 실패: 기존 active 자료 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "업데이트 실패: 연습 기록 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "업데이트 실패 뒤 기존 자료 오프라인 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "변경된 데이터 1개만 다운로드",
+        "status": "PASS"
+      },
+      {
+        "name": "성공 시에만 자료 교체·이전본 보존",
+        "status": "PASS"
+      },
+      {
+        "name": "새로고침 후 새 데이터 적용",
+        "status": "PASS"
+      },
+      {
+        "name": "이전 버전 무결성 확인 후 복구",
+        "status": "PASS"
+      },
+      {
+        "name": "복구 후 원래 데이터 사용",
+        "status": "PASS"
+      },
+      {
+        "name": "390 자료함 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "820 자료함 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "1180 자료함 가로 넘침 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "저장 파일 유실 시 준비 완료 표시 차단",
+        "status": "PASS"
+      },
+      {
+        "name": "유실 파일 보수 후 무결성 재확인",
+        "status": "PASS"
+      },
+      {
+        "name": "자료 삭제 후 연습 기록 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "자료 삭제 후 준비 완료 표시 해제",
+        "status": "PASS"
+      },
+      {
+        "name": "JavaScript 예외 없음",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "exclusions": [
+      "실제 iPad/Safari/Android 기기",
+      "자연 가창·음표 정본 QA",
+      "정식 공개 승인"
+    ],
+    "fixtureVersions": [
+      "0.5.0-data.1",
+      "0.5.0-data.2-QA"
+    ]
+  },
+  "rebuild": {
+    "status": "PASS",
+    "files": [
+      {
+        "path": "app/v05/app.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/boot.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/bundle.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/data/content-v01.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-192.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-512.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon.svg",
+        "matches": true
+      },
+      {
+        "path": "app/v05/index.html",
+        "matches": true
+      },
+      {
+        "path": "app/v05/manifest.webmanifest",
+        "matches": true
+      },
+      {
+        "path": "app/v05/offline.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/package.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/source-no01-03.txt",
+        "matches": true
+      },
+      {
+        "path": "app/v05/styles.css",
+        "matches": true
+      },
+      {
+        "path": "app/v05/sw.js",
+        "matches": true
+      }
+    ],
+    "builderOutput": "Built 14 v05 files. Existing two audio stems unchanged.\n"
+  },
+  "audioAudit": {
+    "candidateMetadata": {
+      "status": "MIDI_LEVEL_SYNTH",
+      "source_musicxml": "NO01_omr_proposed_full.musicxml",
+      "source_musicxml_sha256": "e7456e83d0c894ef5da557d77c1823eb836c091c76dd6f4a4807c45903c02fc0",
+      "tempo_qpm": 86,
+      "sample_rate": 22050,
+      "duration_seconds": 58.6046511627907,
+      "measures": 21,
+      "parts": {
+        "P1": {
+          "name": "Tenor solo",
+          "event_count": 94,
+          "pitched_event_count": 94
+        },
+        "P2": {
+          "name": "Piano",
+          "event_count": 300,
+          "pitched_event_count": 300
+        }
+      },
+      "audio_files": {
+        "tenor": "audio/no01_tenor_midi_level.wav",
+        "piano": "audio/no01_piano_midi_level.wav",
+        "mix": "audio/no01_mix_midi_level.wav"
+      },
+      "limitations": [
+        "candidate MusicXML is not canonical",
+        "sine/additive MIDI-level rendering, not singing",
+        "piano/tenor note events follow MusicXML candidate structure",
+        "no performer voice or voicebank used"
+      ]
+    },
+    "rawSMFVerified": false,
+    "searchedFolders": [
+      "oratorio_unified",
+      "oratorio_v03",
+      "oratorio_v04"
+    ],
+    "existingTwoMP3Unchanged": true,
+    "assets": {
+      "tenor": {
+        "path": "assets/audio/no01-tenor.mp3",
+        "bytes": 939197,
+        "sha256": "081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af"
+      },
+      "piano": {
+        "path": "assets/audio/no01-piano.mp3",
+        "bytes": 939197,
+        "sha256": "150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0"
+      }
+    },
+    "decodedDurationSeconds": 58.60467120181406,
+    "containerReportedDurationSeconds": 58.67102,
+    "scope": "file availability and whole playback; not canonical transcription or acoustic approval"
+  },
+  "visualQA": {
+    "inspected": true,
+    "viewports": [
+      [
+        1180,
+        820
+      ],
+      [
+        820,
+        1180
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "homeScreenshot": true,
+    "helperScreenshot": true
+  },
+  "https": {
+    "url": "https://gilhajeong.github.io/notion/app/v05/",
+    "tests": [
+      {
+        "name": "배포 v05 홈 전곡 기본",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 전곡 두 stem·전체 파일 범위",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 3마디 뒤에도 재생 지속",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 전곡 자연 종료·실제 1회 완주",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 자동 반복 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 일시정지·위치 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 이어서 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 전곡 중 서사 팝업 음악 유지",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 사용자가 중단·처음으로",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 자료8개 검증 저장",
+        "status": "PASS"
+      },
+      {
+        "name": "실제 네트워크 차단 확인",
+        "status": "PASS"
+      },
+      {
+        "name": "HTTPS 오프라인 전곡 파일 재생",
+        "status": "PASS"
+      },
+      {
+        "name": "오프라인 종료 경계·반복 없음",
+        "status": "PASS"
+      },
+      {
+        "name": "배포 JS예외 없음",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "actualWholeContinuousPlayback": true,
+    "environment": "shared Chromium HTTPS, real sample-clock playback; not acoustic approval",
+    "rawSMFVerified": false
+  },
+  "deployment": {
+    "sha": "6656fcca5d12b621cf1c544d9e32f816a336ec38",
+    "commit": "https://github.com/GilHaJeong/notion/commit/6656fcca5d12b621cf1c544d9e32f816a336ec38",
+    "pagesRun": "https://github.com/GilHaJeong/notion/actions/runs/37094077843",
+    "repository": [
+      {
+        "path": "app/v05/app.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/boot.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/bundle.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/data/content-v01.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-192.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-512.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon.svg",
+        "matches": true
+      },
+      {
+        "path": "app/v05/index.html",
+        "matches": true
+      },
+      {
+        "path": "app/v05/manifest.webmanifest",
+        "matches": true
+      },
+      {
+        "path": "app/v05/offline.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/package.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/source-no01-03.txt",
+        "matches": true
+      },
+      {
+        "path": "app/v05/styles.css",
+        "matches": true
+      },
+      {
+        "path": "app/v05/sw.js",
+        "matches": true
+      },
+      {
+        "path": "build_v05.py",
+        "matches": true
+      },
+      {
+        "path": "v05-file-manifest.json",
+        "matches": true
+      },
+      {
+        "path": "README_V05.md",
+        "matches": true
+      },
+      {
+        "path": "source/audio-audit.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/server.py",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/regression.cjs",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/regression-runtime-report.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/narrative-test.cjs",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/narrative-report.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/score-test.cjs",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/score-report.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/offline-test.cjs",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/offline-report.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/whole-test.cjs",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/whole-report.json",
+        "matches": true
+      },
+      {
+        "path": "qa/v05/rebuild-report.json",
+        "matches": true
+      }
+    ],
+    "deployment": [
+      {
+        "path": "app/v05/app.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/boot.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/bundle.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/data/content-v01.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-192.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon-512.png",
+        "matches": true
+      },
+      {
+        "path": "app/v05/icon.svg",
+        "matches": true
+      },
+      {
+        "path": "app/v05/index.html",
+        "matches": true
+      },
+      {
+        "path": "app/v05/manifest.webmanifest",
+        "matches": true
+      },
+      {
+        "path": "app/v05/offline.js",
+        "matches": true
+      },
+      {
+        "path": "app/v05/package.json",
+        "matches": true
+      },
+      {
+        "path": "app/v05/source-no01-03.txt",
+        "matches": true
+      },
+      {
+        "path": "app/v05/styles.css",
+        "matches": true
+      },
+      {
+        "path": "app/v05/sw.js",
+        "matches": true
+      }
+    ],
+    "legacy": [
+      {
+        "path": "app/index.html",
+        "unchanged": true
+      },
+      {
+        "path": "app/v02/index.html",
+        "unchanged": true
+      },
+      {
+        "path": "app/v03/index.html",
+        "unchanged": true
+      },
+      {
+        "path": "app/v04/index.html",
+        "unchanged": true
+      },
+      {
+        "path": "app/assets/audio/no01-tenor.mp3",
+        "unchanged": true
+      },
+      {
+        "path": "app/assets/audio/no01-piano.mp3",
+        "unchanged": true
+      }
+    ]
+  }
+}

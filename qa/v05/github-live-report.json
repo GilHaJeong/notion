@@ -1,0 +1,65 @@
+{
+  "url": "https://gilhajeong.github.io/notion/app/v05/",
+  "tests": [
+    {
+      "name": "배포 v05 홈 전곡 기본",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 전곡 두 stem·전체 파일 범위",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 3마디 뒤에도 재생 지속",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 전곡 자연 종료·실제 1회 완주",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 자동 반복 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 일시정지·위치 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 이어서 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 전곡 중 서사 팝업 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 사용자가 중단·처음으로",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 자료8개 검증 저장",
+      "status": "PASS"
+    },
+    {
+      "name": "실제 네트워크 차단 확인",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 오프라인 전곡 파일 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 종료 경계·반복 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 JS예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "actualWholeContinuousPlayback": true,
+  "environment": "shared Chromium HTTPS, real sample-clock playback; not acoustic approval",
+  "rawSMFVerified": false
+}

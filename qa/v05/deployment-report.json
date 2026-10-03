@@ -1,0 +1,211 @@
+{
+  "sha": "6656fcca5d12b621cf1c544d9e32f816a336ec38",
+  "commit": "https://github.com/GilHaJeong/notion/commit/6656fcca5d12b621cf1c544d9e32f816a336ec38",
+  "pagesRun": "https://github.com/GilHaJeong/notion/actions/runs/37094077843",
+  "repository": [
+    {
+      "path": "app/v05/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v05/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v05/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v05/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v05/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v05/sw.js",
+      "matches": true
+    },
+    {
+      "path": "build_v05.py",
+      "matches": true
+    },
+    {
+      "path": "v05-file-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "README_V05.md",
+      "matches": true
+    },
+    {
+      "path": "source/audio-audit.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/server.py",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/regression.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/regression-runtime-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/narrative-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/narrative-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/score-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/score-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/offline-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/offline-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/whole-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/whole-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v05/rebuild-report.json",
+      "matches": true
+    }
+  ],
+  "deployment": [
+    {
+      "path": "app/v05/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v05/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v05/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v05/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v05/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v05/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v05/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v05/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v05/sw.js",
+      "matches": true
+    }
+  ],
+  "legacy": [
+    {
+      "path": "app/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/v02/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/v03/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/v04/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/assets/audio/no01-tenor.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "app/assets/audio/no01-piano.mp3",
+      "unchanged": true
+    }
+  ]
+}
