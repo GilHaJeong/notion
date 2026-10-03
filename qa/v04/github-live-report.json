@@ -1,0 +1,55 @@
+{
+  "url": "https://gilhajeong.github.io/notion/app/v04/",
+  "tests": [
+    {
+      "name": "HTTPS v04 실제 셸과 첫 앵커",
+      "status": "PASS"
+    },
+    {
+      "name": "배포8쪽 이미지와 마커",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 악보 터치 원문과 대조 경고",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 페이지·터치 후 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 팝업 닫기·초점 복귀",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 확대에도 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "배포자료8개 무결성 검증 후 저장",
+      "status": "PASS"
+    },
+    {
+      "name": "네트워크 차단 직접 확인",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 오프라인 재실행8쪽 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 악보 터치 원문 열람",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTPS 오프라인 음악 실제재생",
+      "status": "PASS"
+    },
+    {
+      "name": "배포 브라우저JS예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "environment": "shared Chromium HTTPS; network offline reload; not physical tablet"
+}

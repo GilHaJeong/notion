@@ -1,0 +1,247 @@
+{
+  "sha": "7807ab7ac873660e1400e6d5bdf75105872f60f1",
+  "commit": "https://github.com/GilHaJeong/notion/commit/7807ab7ac873660e1400e6d5bdf75105872f60f1",
+  "pagesRun": "https://github.com/GilHaJeong/notion/actions/runs/37091026392",
+  "repository": [
+    {
+      "path": "app/v04/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v04/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v04/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v04/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v04/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v04/sw.js",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7-system1.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8-system16.png",
+      "matches": true
+    },
+    {
+      "path": "build_v04.py",
+      "matches": true
+    },
+    {
+      "path": "v04-file-manifest.json",
+      "matches": true
+    },
+    {
+      "path": "README_V04.md",
+      "matches": true
+    },
+    {
+      "path": "source/score-v04/no01-canonical-page7-system1.png",
+      "matches": true
+    },
+    {
+      "path": "source/score-v04/no01-canonical-page7.png",
+      "matches": true
+    },
+    {
+      "path": "source/score-v04/no01-page8-system16.png",
+      "matches": true
+    },
+    {
+      "path": "source/score-v04/no01-page8.png",
+      "matches": true
+    },
+    {
+      "path": "source/score-v04/source-audit.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/server.py",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/regression.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/regression-runtime-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/narrative-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/narrative-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/score-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/score-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/offline-test.cjs",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/offline-report.json",
+      "matches": true
+    },
+    {
+      "path": "qa/v04/rebuild-report.json",
+      "matches": true
+    }
+  ],
+  "deployment": [
+    {
+      "path": "app/v04/app.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/boot.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/bundle.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/data/content-v01.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-192.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon-512.png",
+      "matches": true
+    },
+    {
+      "path": "app/v04/icon.svg",
+      "matches": true
+    },
+    {
+      "path": "app/v04/index.html",
+      "matches": true
+    },
+    {
+      "path": "app/v04/manifest.webmanifest",
+      "matches": true
+    },
+    {
+      "path": "app/v04/offline.js",
+      "matches": true
+    },
+    {
+      "path": "app/v04/package.json",
+      "matches": true
+    },
+    {
+      "path": "app/v04/source-no01-03.txt",
+      "matches": true
+    },
+    {
+      "path": "app/v04/styles.css",
+      "matches": true
+    },
+    {
+      "path": "app/v04/sw.js",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-canonical-page7-system1.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8.png",
+      "matches": true
+    },
+    {
+      "path": "app/assets/score/no01-page8-system16.png",
+      "matches": true
+    }
+  ],
+  "legacy": [
+    {
+      "path": "app/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/v02/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/v03/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/assets/audio/no01-tenor.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "app/assets/audio/no01-piano.mp3",
+      "unchanged": true
+    }
+  ]
+}
