@@ -1,0 +1,53 @@
+const {chromium}=require('/vercel/sandbox/node_modules/playwright');
+const fs=require('fs'),assert=require('assert');
+(async()=>{
+const browser=await chromium.launch({executablePath:'/usr/local/bin/chromium',headless:true,args:['--no-sandbox']});
+const context=await browser.newContext({viewport:{width:820,height:1180},offline:false});
+const page=await context.newPage();let errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});const tests=[];
+const check=(name,fn)=>{assert(fn);tests.push({name,status:'PASS'});};
+const path='http://localhost:8774/app/v03/';await page.goto(path);await page.waitForSelector('#first-next');
+check('첫 실행 무선택·진입 잠금',await page.locator('#first-next').isDisabled());
+check('초기 가짜 연습 기록 없음',await page.evaluate(()=>window.__oratorioReview.state.last===null));
+await page.screenshot({path:'/data/oratorio_v03/qa/regression-01-first-tablet.png',fullPage:true});
+await page.locator('[data-part="T"]').click();check('파트 선택 활성화',await page.locator('#first-next').isEnabled());await page.locator('#first-next').click();
+check('홈 라우팅',await page.locator('#app').getAttribute('data-screen')==='home');
+check('홈 진입만으로 기록 생성하지 않음',await page.evaluate(()=>window.__oratorioReview.state.last===null));
+await page.screenshot({path:'/data/oratorio_v03/qa/regression-02-home-tablet.png',fullPage:true});
+await page.locator('[data-open="NO01"]').click();check('곡 상세 연결',await page.locator('#app').getAttribute('data-screen')==='song_detail');await page.screenshot({path:'/data/oratorio_v03/qa/regression-03-detail-tablet.png',fullPage:true});
+await page.locator('section [data-route="practice"]').click();await page.waitForFunction(()=>document.querySelector('#score-image').complete);
+check('원본 악보 이미지 로딩',await page.locator('#score-image').evaluate(i=>i.naturalWidth>0));
+await page.locator('#from').selectOption('2');await page.locator('#to').selectOption('2');
+await page.locator('#play').click();await page.waitForFunction(()=>window.__oratorioReview.playing);await page.waitForTimeout(550);
+check('실제 AudioContext 재생·시간 진행',await page.evaluate(()=>window.__oratorioReview.audioDecoded&&window.__oratorioReview.audioContextState==='running'&&window.__oratorioReview.position>2.9));
+check('공통 시간축으로 두 stem 재생',await page.evaluate(()=>window.__oratorioReview.sourceCount===2));
+await page.locator('#track').selectOption('tenor');check('트랙 변경·반주 음소거',await page.evaluate(()=>window.__oratorioReview.gains[1]===0));
+await page.locator('#track').selectOption('piano');check('트랙 변경·테너 음소거',await page.evaluate(()=>window.__oratorioReview.gains[0]===0));
+await page.locator('#track').selectOption('mix');await page.waitForTimeout(3000);
+check('선택 마디 반복 실제 동작·횟수 저장',await page.evaluate(()=>window.__oratorioReview.state.counts.NO01_2_2>=1&&window.__oratorioReview.position>=window.__oratorioReview.range()[0]&&window.__oratorioReview.position<window.__oratorioReview.range()[1]));
+await page.locator('#play').click();check('일시정지 실제 동작',await page.evaluate(()=>!window.__oratorioReview.playing&&window.__oratorioReview.sourceCount===0));
+await page.locator('#seek').evaluate(el=>{el.value=3.4;el.dispatchEvent(new Event('input',{bubbles:true}));});
+check('seek 선택 구간 내 이동',await page.evaluate(()=>Math.abs(window.__oratorioReview.position-3.4)<.05));
+await page.locator('#speed').selectOption('0.8');check('재생 속도 상태',await page.evaluate(()=>window.__oratorioReview.state.speed===.8));
+await page.locator('#from').selectOption('5');check('역전 구간 자동 정합성',await page.evaluate(()=>window.__oratorioReview.state.from===5&&window.__oratorioReview.state.to===5));
+await page.locator('#from').selectOption('1');await page.locator('#to').selectOption('3');await page.locator('#speed').selectOption('1');
+await page.locator('.selfcheck > summary').click();await page.locator('[data-check="almost"]').click();check('자가 체크 저장',await page.evaluate(()=>window.__oratorioReview.state.progress.NO01.status==='nearly_stable'));
+await page.screenshot({path:'/data/oratorio_v03/qa/regression-04-practice-tablet.png',fullPage:true});
+await page.reload();await page.waitForFunction(()=>!!window.__oratorioReview);check('재접속 파트·자가 체크 복구',await page.evaluate(()=>window.__oratorioReview.state.part==='T'&&window.__oratorioReview.state.progress.NO01.status==='nearly_stable'));
+await page.locator('[data-action="resume"]').click();check('이어하기 구간 복구',await page.evaluate(()=>window.__oratorioReview.state.screen==='practice'&&window.__oratorioReview.state.from===1&&window.__oratorioReview.state.to===3));
+await page.locator('.app-nav [data-route="home"]').click();await page.locator('[data-open="laodicea"]').click();await page.locator('section [data-route="practice"]').click();
+check('미확보 음원 재생 잠금',await page.locator('#play').isDisabled());check('라오디게아 시간축 추정하지 않음',await page.locator('#cursor').textContent()==='45–53마디 · 시간축 미연결');
+await page.screenshot({path:'/data/oratorio_v03/qa/regression-05-missing-audio-tablet.png',fullPage:true});await page.locator('[data-action="cue"]').click();
+check('원본 좌표 Cue·시트 연결',await page.locator('#cue-dialog').evaluate(el=>el.open));check('Music 분석을 대원 시트에 노출하지 않음',await page.locator('.cue-text h3').allTextContents().then(a=>a.join(',')==='뜻,부를 때,조심할 것'));
+await page.screenshot({path:'/data/oratorio_v03/qa/regression-06-cue-sheet-tablet.png',fullPage:true});await page.locator('[data-action="close-cue"]').click();
+await page.locator('.app-nav [data-route="progress_all"]').click();check('36곡 상태 자리·유효 플레이어 분리',await page.locator('.song-row').count()===36&&await page.locator('.song-row:not(:disabled)').count()===1);await page.screenshot({path:'/data/oratorio_v03/qa/regression-07-progress-tablet.png'});
+await page.locator('[data-filter="ready"]').click();check('자가 체크 필터',await page.locator('.song-row').count()===1);
+await page.locator('.app-nav [data-route="first_run_part_select"]').click();await page.locator('[data-part="S"]').click();await page.locator('#first-next').click();await page.locator('[data-open="NO01"]').click();await page.locator('section [data-route="practice"]').click();check('다른 파트에 테너를 잘못 배정하지 않음',await page.evaluate(()=>window.__oratorioReview.state.track==='piano')&&await page.locator('#track option[value="tenor"]').evaluate(el=>el.disabled));
+await page.locator('.app-nav [data-route="first_run_part_select"]').click();await page.locator('[data-part="T"]').click();await page.locator('#first-next').click();await page.locator('[data-open="NO01"]').click();await page.locator('section [data-route="practice"]').click();
+for(const [w,h] of [[820,1180],[768,1024],[834,1194],[1024,1366],[390,844],[1180,820]]){await page.setViewportSize({width:w,height:h});await page.waitForTimeout(80);const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1);check(`${w}×${h} 가로 페이지 넘침 없음`,!overflow);await page.screenshot({path:`/data/oratorio_v03/qa/regression-viewport-${w}x${h}.png`,fullPage:true});}
+check('동일 출처 외부 CDN 의존 없음',requests.every(u=>u.startsWith('http://localhost:8774/')));check('브라우저 JS 예외 없음',errors.length===0);
+// Confirm the negative path is genuinely handled, not a canned PASS.
+const bad=await context.newPage();await bad.goto(path);await bad.waitForFunction(()=>!!window.__oratorioReview);await bad.evaluate(()=>{localStorage.clear();localStorage.setItem('oratorio.v1.meta.schemaVersion','9');localStorage.setItem('oratorio.v1.user.part','"B"');});await bad.reload();await bad.waitForFunction(()=>!!window.__oratorioReview);check('저장 schema 불일치 초기화',await bad.evaluate(()=>window.__oratorioReview.state.part==='none'));
+await bad.evaluate(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('denied')}})}); // next boot is separately checked in another page
+const deniedContext=await browser.newContext({viewport:{width:390,height:844}});await deniedContext.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('denied')}}));const denied=await deniedContext.newPage();await denied.goto(path);await denied.waitForFunction(()=>!!window.__oratorioReview);check('저장소 접근 거부 안전 처리',await denied.locator('#storage-notice').isVisible());await denied.screenshot({path:'/data/oratorio_v03/qa/regression-08-storage-error-phone.png',fullPage:true});
+const report={build:'oratorio-unified-internal-v0.3.0',testedAt:new Date().toISOString(),environment:'sandbox Chromium / hosted localhost service worker; offline restart tested separately',tests,errors,externalRequests:requests,scope:'runtime only; content canonical QA, acoustic listen, real tablet readability and production approval excluded'};fs.writeFileSync('/data/oratorio_v03/qa/regression-runtime-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({passed:tests.length,errors,externalRequests:requests.length}));await browser.close();process.exit(0);
+})().catch(e=>{console.error(e.stack);process.exit(1)});

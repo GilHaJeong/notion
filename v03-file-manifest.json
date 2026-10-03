@@ -1,0 +1,72 @@
+[
+  {
+    "path": "app/v03/app.js",
+    "bytes": 28686,
+    "sha256": "0c9376257b6b8249d685a89df9198c133c78827eafa5ba9877a0c2aeddbc19d3"
+  },
+  {
+    "path": "app/v03/boot.js",
+    "bytes": 1042,
+    "sha256": "052ae8d197ae5c41c517ac1b8164828c0afa6bb24e4d470cefe13fa7b84634ff"
+  },
+  {
+    "path": "app/v03/bundle.js",
+    "bytes": 75601,
+    "sha256": "24eb5e2f8ad84acb08c88a9b616554dba1db2cf07d0151e7c711e0eed8c71c55"
+  },
+  {
+    "path": "app/v03/data/content-v01.json",
+    "bytes": 75575,
+    "sha256": "bfc325b2aea57c0b3783b3047e225a769065186b00bdf4e7a34d2f5169f43066"
+  },
+  {
+    "path": "app/v03/icon-192.png",
+    "bytes": 6544,
+    "sha256": "46bfdb2f8848328b27703f70f853467e6beea9175d83161c2ea1e70c67662285"
+  },
+  {
+    "path": "app/v03/icon-512.png",
+    "bytes": 3299,
+    "sha256": "489fcbba47c3ff1a2371716df3a91e1816b570677c7acaf1dd42889f6a7c62cf"
+  },
+  {
+    "path": "app/v03/icon.svg",
+    "bytes": 349,
+    "sha256": "a606eccb53472c3b899af0c9ed95fd566ed361e06ae50ed38f1b1bbe873e6e61"
+  },
+  {
+    "path": "app/v03/index.html",
+    "bytes": 3593,
+    "sha256": "8ff775aef999031b299381fcc3c40baceeec0c9694d432ded0d8210be8e31d8d"
+  },
+  {
+    "path": "app/v03/manifest.webmanifest",
+    "bytes": 499,
+    "sha256": "d8c5890eea18d6a6c93daa8e26482cbd6936b00fcb0ba1ff1d4aa1931132312c"
+  },
+  {
+    "path": "app/v03/offline.js",
+    "bytes": 14183,
+    "sha256": "d21fe62952c87e2115c276b9749fea3addde73e6ac5cdcc72cc4c49313956b0b"
+  },
+  {
+    "path": "app/v03/package.json",
+    "bytes": 1579,
+    "sha256": "9c78d4c5800ee1c1ed77e203150182de21e0e7ab710e6de05f8abce0bee18694"
+  },
+  {
+    "path": "app/v03/source-no01-03.txt",
+    "bytes": 13351,
+    "sha256": "db1881f7faf3cab2fbdbd5430ec4e8f58351e59a28481420798f63f76bc0485f"
+  },
+  {
+    "path": "app/v03/styles.css",
+    "bytes": 15507,
+    "sha256": "ad66baf5486937b4dbb57273010511d6b9e12d1b4085fb5704b257ba7a036fc7"
+  },
+  {
+    "path": "app/v03/sw.js",
+    "bytes": 1277,
+    "sha256": "184cb9447ccefff609c70f6545437efd888af65eb03c2c696e5873847a43c853"
+  }
+]

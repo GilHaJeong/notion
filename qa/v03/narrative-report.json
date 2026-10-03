@@ -1,0 +1,137 @@
+{
+  "testedAt": "2026-10-03T01:48:41.948Z",
+  "environment": "Chromium touch-enabled emulator; localhost; not physical tablet",
+  "tests": [
+    {
+      "name": "기존 MIDI 모드로 시작",
+      "status": "PASS"
+    },
+    {
+      "name": "서사 모드 전환 후 음악 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "모드 전환으로 재생 위치 초기화하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "트랙·속도·루프 구간 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "원문 네 레이어 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "두 No1 단계만 조작 가능",
+      "status": "PASS"
+    },
+    {
+      "name": "검증 전 Cue 반복 버튼 잠금",
+      "status": "PASS"
+    },
+    {
+      "name": "다른 서사 읽어도 음악 위치·세대 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "8쪽 대응 악보 미포함 명시",
+      "status": "PASS"
+    },
+    {
+      "name": "감정 문안 임의 생성하지 않음",
+      "status": "PASS"
+    },
+    {
+      "name": "터치로 원문 팝업 열림",
+      "status": "PASS"
+    },
+    {
+      "name": "팝업 열기 중 MIDI 계속 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "원문 Cue ID 정확히 연결",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape 닫기·초점 복귀",
+      "status": "PASS"
+    },
+    {
+      "name": "MIDI 모드 복귀도 음악 재시작 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX 추출 원문 텍스트 해시 일치",
+      "status": "PASS"
+    },
+    {
+      "name": "모든 화면 발췌가 원문 위치와 정확히 일치",
+      "status": "PASS"
+    },
+    {
+      "name": "미확인 좌표·시간을 비워 둠",
+      "status": "PASS"
+    },
+    {
+      "name": "1180×820 서사 화면 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180×820 터치 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 팝업이 화면 폭 안에 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "820×1180 서사 화면 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820×1180 터치 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "820 팝업이 화면 폭 안에 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "390×844 서사 화면 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "390×844 터치 버튼 44px 이상",
+      "status": "PASS"
+    },
+    {
+      "name": "390 팝업이 화면 폭 안에 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "네트워크 차단 실제 확인",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 재실행에서 서사 데이터 열람",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 서사 모드 실제 음악 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "새 기능 브라우저 예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "excluded": [
+    "actual iPad/Safari and Android",
+    "musical listening approval",
+    "automatic narrative synchronization",
+    "new No1 measure hotspots"
+  ]
+}
