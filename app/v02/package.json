@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "internal-no01-laodicea",
+  "version": "0.2.0-data.1",
+  "label": "No.1 · 테너·피아노 / 라오디게아 악보·해설",
+  "canonical": false,
+  "scope": "내부 검증 자료 · 제1부 전체 아님",
+  "items": [
+    {
+      "key": "content",
+      "url": "data/content-v01.json",
+      "bytes": 69038,
+      "sha256": "d5f4df6a2b756bf00de5b5e78840ec007612101b6e14ae91a7e1c48a6526b079",
+      "mime": "application/json"
+    },
+    {
+      "key": "tenor",
+      "url": "../assets/audio/no01-tenor.mp3",
+      "bytes": 939197,
+      "sha256": "081f8c7b9b0a53a97a1082630bf38f582e4d1a243b89eae75881344bb9e422af",
+      "mime": "audio/mpeg"
+    },
+    {
+      "key": "piano",
+      "url": "../assets/audio/no01-piano.mp3",
+      "bytes": 939197,
+      "sha256": "150d93294e5983bdc78f9cbf89534ad29c3690d976d59f6556dba39e5d88a1b0",
+      "mime": "audio/mpeg"
+    },
+    {
+      "key": "no01page",
+      "url": "../assets/score/p-003.png",
+      "bytes": 234588,
+      "sha256": "b7d7a82ab35f0a9412efd48a71430aec4972a6ae440bb43d29c31df8b7d76d41",
+      "mime": "image/png"
+    },
+    {
+      "key": "no01crop",
+      "url": "../assets/score/no01-first-system.png",
+      "bytes": 84888,
+      "sha256": "47798d0d07dfa977d74e5524d6877e856b3402c268c2f2679a6035e2b0c71c39",
+      "mime": "image/png"
+    },
+    {
+      "key": "laodicea",
+      "url": "../assets/score/laodicea-p149.png",
+      "bytes": 162392,
+      "sha256": "ae798b73425b379a66db03ed02f081a43e1a195c322568d66f79ddcf2fd31566",
+      "mime": "image/png"
+    }
+  ]
+}

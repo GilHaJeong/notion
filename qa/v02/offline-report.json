@@ -1,0 +1,148 @@
+{
+  "testedAt": "2026-10-02T23:29:32.497Z",
+  "environment": "headless Chromium, real service worker/cache storage on localhost; persistent-profile offline cold restart",
+  "tests": [
+    {
+      "name": "HTTPS/localhost service worker와 앱 셸 저장",
+      "status": "PASS"
+    },
+    {
+      "name": "초기 자료함: 미저장 상태",
+      "status": "PASS"
+    },
+    {
+      "name": "용량 부족을 다운로드 전에 차단",
+      "status": "PASS"
+    },
+    {
+      "name": "SHA-256 불일치 자료 설치 차단",
+      "status": "PASS"
+    },
+    {
+      "name": "실패해도 확인된 부분 저장 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "실패 자동 재시도 최대 3회",
+      "status": "PASS"
+    },
+    {
+      "name": "이어받기: 나머지 1개만 다운로드",
+      "status": "PASS"
+    },
+    {
+      "name": "모든 파일 검증 후 오프라인 준비 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "저장 자료 6개 해시 확인",
+      "status": "PASS"
+    },
+    {
+      "name": "저장 뒤 실제 음원 decode와 두 stem 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "연습 중 자료 교체 차단",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 새로고침과 기록 복구",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 음원 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "오프라인 재실행 후 자료함 바로가기 상태",
+      "status": "PASS"
+    },
+    {
+      "name": "브라우저 종료 후 오프라인 재실행",
+      "status": "PASS"
+    },
+    {
+      "name": "종료·재실행 후 오프라인 음원 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "수정본 감지·기존 자료 유지 표시",
+      "status": "PASS"
+    },
+    {
+      "name": "업데이트 실패: 기존 active 자료 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "업데이트 실패: 연습 기록 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "업데이트 실패 뒤 기존 자료 오프라인 재생",
+      "status": "PASS"
+    },
+    {
+      "name": "변경된 데이터 1개만 다운로드",
+      "status": "PASS"
+    },
+    {
+      "name": "성공 시에만 자료 교체·이전본 보존",
+      "status": "PASS"
+    },
+    {
+      "name": "새로고침 후 새 데이터 적용",
+      "status": "PASS"
+    },
+    {
+      "name": "이전 버전 무결성 확인 후 복구",
+      "status": "PASS"
+    },
+    {
+      "name": "복구 후 원래 데이터 사용",
+      "status": "PASS"
+    },
+    {
+      "name": "390 자료함 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "820 자료함 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "1180 자료함 가로 넘침 없음",
+      "status": "PASS"
+    },
+    {
+      "name": "저장 파일 유실 시 준비 완료 표시 차단",
+      "status": "PASS"
+    },
+    {
+      "name": "유실 파일 보수 후 무결성 재확인",
+      "status": "PASS"
+    },
+    {
+      "name": "자료 삭제 후 연습 기록 유지",
+      "status": "PASS"
+    },
+    {
+      "name": "자료 삭제 후 준비 완료 표시 해제",
+      "status": "PASS"
+    },
+    {
+      "name": "JavaScript 예외 없음",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "exclusions": [
+    "실제 iPad/Safari/Android 기기",
+    "자연 가창·음표 정본 QA",
+    "정식 공개 승인"
+  ],
+  "fixtureVersions": [
+    "0.2.0-data.1",
+    "0.2.0-data.2-QA"
+  ]
+}
